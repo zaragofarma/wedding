@@ -402,3 +402,19 @@ textarea {
   color: #000;
   padding: 0.2em 0;
 }
+
+/* line 2, ../sass/_backgrond_images.scss */
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+/* line 7, ../sass/_backgrond_images.scss */
+#weddint-wrapper {
+  background: url(../../img/backgrounds/brqx_wedding_desktop_1920_2018.png);
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
