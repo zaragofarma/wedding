@@ -4,10 +4,28 @@ body{
 	height:100%;
 	width:100%;
 }
-#weddint-wrapper{
+.wedding-wrapper-bg{
 	background: url(../../img/backgrounds/brqx_wedding_desktop_1920_2018.png);
 	height:100%;
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
+.heart-wrapper{
+    width: 64%;
+    height: 91%;
+    margin: auto auto;
+    /* position: relative; */
+}
+.heart-bg{
+	background: url(../../img/hearts/brqx_heart_pink_yellow_0800_2018.png);
+	// position: absolute;
+	// left: 50%;
+	// top: 50%;
+	width: 100%;
+	height:100%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
