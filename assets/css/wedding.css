@@ -565,29 +565,30 @@ body {
 /* line 2, ../sass/_wedding_header_logo.scss */
 section.wedding-header-wrapper {
   position: relative;
+  z-index: 1;
 }
 
-/* line 7, ../sass/_wedding_header_logo.scss */
+/* line 8, ../sass/_wedding_header_logo.scss */
 .wedding-logo-left {
   display: inline-block;
   width: 300px;
   float: left;
 }
 
-/* line 12, ../sass/_wedding_header_logo.scss */
+/* line 13, ../sass/_wedding_header_logo.scss */
 .wedding-logo-left a img {
   width: 85%;
   height: auto;
 }
 
-/* line 17, ../sass/_wedding_header_logo.scss */
+/* line 18, ../sass/_wedding_header_logo.scss */
 .wedding-logo-right {
   display: inline-block;
   width: 300px;
   float: right;
 }
 
-/* line 23, ../sass/_wedding_header_logo.scss */
+/* line 24, ../sass/_wedding_header_logo.scss */
 .wedding-logo-right a img {
   height: auto;
   width: 150px;
@@ -598,9 +599,10 @@ section.wedding-header-wrapper {
 /* line 1, ../sass/_heart_area.scss */
 .heart-wrapper {
   position: relative;
+  padding: 0px 80px;
 }
 
-/* line 4, ../sass/_heart_area.scss */
+/* line 5, ../sass/_heart_area.scss */
 section.heart-bg {
   margin-right: auto;
   position: inherit;
@@ -608,10 +610,63 @@ section.heart-bg {
   margin-left: auto;
 }
 
-/* line 10, ../sass/_heart_area.scss */
+/* line 11, ../sass/_heart_area.scss */
 section.heart-bg img {
   width: 100%;
   height: auto;
   position: relative;
   margin-top: 25px;
+}
+
+/* line 2, ../sass/_rebone.scss */
+section.ribone-border-1,
+section.ribone-border-2,
+section.ribone-border-3,
+section.ribone-border-4 {
+  position: relative;
+}
+
+/* line 9, ../sass/_rebone.scss */
+section.ribone-border-1::before {
+  content: "";
+  width: 100%;
+  height: 15px;
+  background-color: #DFA960;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-top: 100px;
+}
+
+/* line 20, ../sass/_rebone.scss */
+section.ribone-border-2::before {
+  content: "";
+  width: 15px;
+  height: 500px;
+  background-color: #DFA960;
+  position: absolute;
+  top: 100px;
+  left: 0;
+}
+
+/* line 30, ../sass/_rebone.scss */
+section.ribone-border-4::before {
+  content: "";
+  width: 15px;
+  height: 500px;
+  background-color: #DFA960;
+  position: absolute;
+  top: 100px;
+  right: 0;
+}
+
+/* line 40, ../sass/_rebone.scss */
+section.ribone-border-3::before {
+  content: "";
+  width: 100%;
+  height: 15px;
+  background-color: #DFA960;
+  position: absolute;
+  right: 0;
+  bottom: 15px;
 }

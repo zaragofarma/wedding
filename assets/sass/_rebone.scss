@@ -1,14 +1,48 @@
-section.ribone-border-1 {
+// remobe one
+section.ribone-border-1,
+section.ribone-border-2,
+section.ribone-border-3,
+section.ribone-border-4{
     position: relative;
 }
-
+// rebone top
 section.ribone-border-1::before {
     content: "";
     width: 100%;
-    height: 17px;
-    background-color: red;
+    height: 15px;
+    background-color: #DFA960;
     position: absolute;
     left: 0;
     top: 0;
     margin-top:100px;
+}
+// ribone laft
+section.ribone-border-2::before {
+    content: "";
+    width: 15px;
+    height: 500px;
+    background-color: #DFA960;
+    position: absolute;
+    top: 100px;
+    left: 0;
+}
+// ribone right
+section.ribone-border-4::before {
+    content: "";
+    width: 15px;
+    height: 500px;
+    background-color: #DFA960;
+    position: absolute;
+    top: 100px;
+    right: 0;
+}
+// ribone bottom
+section.ribone-border-3::before {
+    content: "";
+    width: 100%;
+    height: 15px;
+    background-color: #DFA960;
+    position: absolute;
+    right: 0;
+    bottom: 15px;
 }
