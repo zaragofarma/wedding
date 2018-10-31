@@ -562,6 +562,39 @@ body {
     height: inherit;
   }
 }
+/* line 2, ../sass/_wedding_header_logo.scss */
+section.wedding-header-wrapper {
+  position: relative;
+}
+
+/* line 7, ../sass/_wedding_header_logo.scss */
+.wedding-logo-left {
+  display: inline-block;
+  width: 300px;
+  float: left;
+}
+
+/* line 12, ../sass/_wedding_header_logo.scss */
+.wedding-logo-left a img {
+  width: 85%;
+  height: auto;
+}
+
+/* line 17, ../sass/_wedding_header_logo.scss */
+.wedding-logo-right {
+  display: inline-block;
+  width: 300px;
+  float: right;
+}
+
+/* line 23, ../sass/_wedding_header_logo.scss */
+.wedding-logo-right a img {
+  height: auto;
+  width: 150px;
+  position: absolute;
+  right: 0;
+}
+
 /* line 1, ../sass/_heart_area.scss */
 .heart-wrapper {
   position: relative;
