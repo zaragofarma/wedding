@@ -1,0 +1,28 @@
+
+section.wedding-header-wrapper {
+    position: relative;
+}
+
+// wedding logo left
+.wedding-logo-left{
+    display: inline-block;
+    width: 300px;
+    float: left;
+}
+.wedding-logo-left a img{
+    width: 85%;
+    height: auto;
+}
+// wedding logo right
+.wedding-logo-right{
+    display: inline-block;
+    width: 300px;
+    float: right;
+}
+
+.wedding-logo-right a img{
+    height: auto;
+    width: 150px;
+    position: absolute;
+    right: 0;
+}
