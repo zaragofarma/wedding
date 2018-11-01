@@ -611,7 +611,7 @@ section.heart-bg {
 }
 
 /* line 11, ../sass/_heart_area.scss */
-section.heart-bg img {
+section.heart-bg > img {
   width: 100%;
   height: auto;
   position: relative;
@@ -681,4 +681,37 @@ section.ribone-border-3::before {
   width: 100%;
   height: 400px;
   padding: 77px;
+}
+
+/* line 12, ../sass/_main_slide_text.scss */
+.scroll-inner-container {
+  position: relative;
+}
+
+/* line 15, ../sass/_main_slide_text.scss */
+.scroll-inner-container {
+  height: calc(245px + 0px);
+  overflow: auto;
+}
+
+/* line 21, ../sass/_main_slide_text.scss */
+.social-image-area {
+  background-color: #eaeaea;
+  padding: 0px 0px 15px 15px;
+}
+
+/* line 25, ../sass/_main_slide_text.scss */
+.social-image-area img {
+  padding-right: 15px;
+  padding-bottom: 5px;
+}
+
+/* line 30, ../sass/_main_slide_text.scss */
+.social-image-area p:nth-child(odd) {
+  color: #605E1A;
+}
+
+/* line 34, ../sass/_main_slide_text.scss */
+.social-image-area p:nth-child(even) {
+  color: #581A7D;
 }
