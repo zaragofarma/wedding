@@ -20,11 +20,21 @@
 }
 .social-image-area {
     background-color: #eaeaea;
-    padding: 0px 0px 15px 15px;
+    padding: 15px 15px 15px 15px;
+    text-align: justify;
+}
+.social-image-area p{
+
 }
 .social-image-area img{
   padding-right: 15px;
   padding-bottom: 5px;
+}
+
+// for chorme hide scroll-bar
+.scroll-inner-container::-webkit-scrollbar{
+    display: none;
+    position: absolute;
 }
 
 .social-image-area p:nth-child(odd) {

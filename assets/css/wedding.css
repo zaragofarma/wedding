@@ -697,21 +697,28 @@ section.ribone-border-3::before {
 /* line 21, ../sass/_main_slide_text.scss */
 .social-image-area {
   background-color: #eaeaea;
-  padding: 0px 0px 15px 15px;
+  padding: 15px 15px 15px 15px;
+  text-align: justify;
 }
 
-/* line 25, ../sass/_main_slide_text.scss */
+/* line 29, ../sass/_main_slide_text.scss */
 .social-image-area img {
   padding-right: 15px;
   padding-bottom: 5px;
 }
 
-/* line 30, ../sass/_main_slide_text.scss */
+/* line 35, ../sass/_main_slide_text.scss */
+.scroll-inner-container::-webkit-scrollbar {
+  display: none;
+  position: absolute;
+}
+
+/* line 40, ../sass/_main_slide_text.scss */
 .social-image-area p:nth-child(odd) {
   color: #605E1A;
 }
 
-/* line 34, ../sass/_main_slide_text.scss */
+/* line 44, ../sass/_main_slide_text.scss */
 .social-image-area p:nth-child(even) {
   color: #581A7D;
 }
