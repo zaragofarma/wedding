@@ -81,7 +81,10 @@ var excldH,objHeight,objWidth;
 };
 getPos(obj);
 
-
+    //Calls fuction on mouse over
+obj.mousemove(function(e) {
+    handleMouseMove(e)
+});
 
     // document ready function end
 });
