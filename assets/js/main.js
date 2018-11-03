@@ -80,12 +80,30 @@ var excldH,objHeight,objWidth;
     right = left+objWidth
 };
 getPos(obj);
-
+    // end function
     //Calls fuction on mouse over
 obj.mousemove(function(e) {
     handleMouseMove(e)
 });
+    // end function
+    //Get position of mouse pointer
+var disableAutoScroll = true;
+function handleMouseMove(e) {
+        var posX = e.clientX;
+            var posY = e.clientY;
 
+        if(posY < top+excldH && disableAutoScroll == true){
+            
+            verticalSlideDown();
+
+        }else if(posY > bottom-excldH && disableAutoScroll == true){
+            
+            verticalSlideUp();
+        }else{
+            var div = $('.scroll-inner-container');
+            div.stop();
+        }
+ };
     // document ready function end
 });
 
