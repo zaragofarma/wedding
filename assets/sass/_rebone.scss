@@ -49,10 +49,9 @@ section.ribone-border-3::before {
 
 // rebone flower top left
 section.ribone-border-1::after {
-    content: "";
+    content: url('../../img/ribbons/brqx_ribbon_double_0100_2018.png');
     width: 100px;
     height: 100px;
-    background-color: green;
     position: absolute;
     top: 0;
     left: 0;
@@ -65,12 +64,11 @@ section.ribone-border-1::after {
 // rebone flower bottom right
 section.ribone-border-3::after {
     position: absolute;
-    content: "";
+    content: url('../../img/ribbons/brqx_ribbon_double_0100_2018.png');
     bottom: 0;
     right: 0;
     width: 100px;
     height: 100px;
-    background-color: gold;
     border-radius: 50%;
     margin-right: -50px;
     margin-bottom: 0px;

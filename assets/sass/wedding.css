@@ -1,4 +1,3 @@
-/* line 1, ../sass/_browser_reset.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,47 +20,39 @@ time, mark, audio, video {
 }
 
 /* make sure to set some focus styles for accessibility */
-/* line 23, ../sass/_browser_reset.scss */
 :focus {
   outline: 0;
 }
 
 /* HTML5 display-role reset for older browsers */
-/* line 28, ../sass/_browser_reset.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-/* line 33, ../sass/_browser_reset.scss */
 body {
   line-height: 1;
 }
 
-/* line 37, ../sass/_browser_reset.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 41, ../sass/_browser_reset.scss */
 blockquote, q {
   quotes: none;
 }
 
-/* line 45, ../sass/_browser_reset.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none;
 }
 
-/* line 51, ../sass/_browser_reset.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 56, ../sass/_browser_reset.scss */
 input[type=search]::-webkit-search-cancel-button,
 input[type=search]::-webkit-search-decoration,
 input[type=search]::-webkit-search-results-button,
@@ -70,7 +61,6 @@ input[type=search]::-webkit-search-results-decoration {
   -moz-appearance: none;
 }
 
-/* line 64, ../sass/_browser_reset.scss */
 input[type=search] {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -78,7 +68,6 @@ input[type=search] {
   box-sizing: content-box;
 }
 
-/* line 72, ../sass/_browser_reset.scss */
 textarea {
   overflow: auto;
   vertical-align: top;
@@ -88,7 +77,6 @@ textarea {
 /**
  * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
  */
-/* line 82, ../sass/_browser_reset.scss */
 audio,
 canvas,
 video {
@@ -102,7 +90,6 @@ video {
  * Prevent modern browsers from displaying `audio` without controls.
  * Remove excess height in iOS 5 devices.
  */
-/* line 96, ../sass/_browser_reset.scss */
 audio:not([controls]) {
   display: none;
   height: 0;
@@ -112,7 +99,6 @@ audio:not([controls]) {
  * Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.
  * Known issue: no IE 6 support.
  */
-/* line 106, ../sass/_browser_reset.scss */
 [hidden] {
   display: none;
 }
@@ -123,7 +109,6 @@ audio:not([controls]) {
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
-/* line 117, ../sass/_browser_reset.scss */
 html {
   font-size: 100%;
   /* 1 */
@@ -136,7 +121,6 @@ html {
 /**
  * Address `outline` inconsistency between Chrome and other browsers.
  */
-/* line 127, ../sass/_browser_reset.scss */
 a:focus {
   outline: thin dotted;
 }
@@ -144,7 +128,6 @@ a:focus {
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
-/* line 135, ../sass/_browser_reset.scss */
 a:active,
 a:hover {
   outline: 0;
@@ -154,7 +137,6 @@ a:hover {
  * 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.
  * 2. Improve image quality when scaled in IE 7.
  */
-/* line 145, ../sass/_browser_reset.scss */
 img {
   border: 0;
   /* 1 */
@@ -165,7 +147,6 @@ img {
 /**
  * Address margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
  */
-/* line 154, ../sass/_browser_reset.scss */
 figure {
   margin: 0;
 }
@@ -173,7 +154,6 @@ figure {
 /**
  * Correct margin displayed oddly in IE 6/7.
  */
-/* line 162, ../sass/_browser_reset.scss */
 form {
   margin: 0;
 }
@@ -181,7 +161,6 @@ form {
 /**
  * Define consistent border, margin, and padding.
  */
-/* line 170, ../sass/_browser_reset.scss */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
@@ -193,7 +172,6 @@ fieldset {
  * 2. Correct text not wrapping in Firefox 3.
  * 3. Correct alignment displayed oddly in IE 6/7.
  */
-/* line 182, ../sass/_browser_reset.scss */
 legend {
   border: 0;
   /* 1 */
@@ -210,7 +188,6 @@ legend {
  *    and Chrome.
  * 3. Improve appearance and consistency in all browsers.
  */
-/* line 196, ../sass/_browser_reset.scss */
 button,
 input,
 select,
@@ -229,7 +206,6 @@ textarea {
  * Address Firefox 3+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
-/* line 211, ../sass/_browser_reset.scss */
 button,
 input {
   line-height: normal;
@@ -241,7 +217,6 @@ input {
  * Correct `button` style inheritance in Chrome, Safari 5+, and IE 6+.
  * Correct `select` style inheritance in Firefox 4+ and Opera.
  */
-/* line 223, ../sass/_browser_reset.scss */
 button,
 select {
   text-transform: none;
@@ -256,7 +231,6 @@ select {
  * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
  *    Known issue: inner spacing remains in IE 6.
  */
-/* line 238, ../sass/_browser_reset.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -272,7 +246,6 @@ input[type="submit"] {
 /**
  * Re-set default cursor for disabled elements.
  */
-/* line 251, ../sass/_browser_reset.scss */
 button[disabled],
 html input[disabled] {
   cursor: default;
@@ -284,7 +257,6 @@ html input[disabled] {
  * 3. Remove excess padding in IE 7.
  *    Known issue: excess padding remains in IE 6.
  */
-/* line 263, ../sass/_browser_reset.scss */
 input[type="checkbox"],
 input[type="radio"] {
   -webkit-box-sizing: border-box;
@@ -303,7 +275,6 @@ input[type="radio"] {
  * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof).
  */
-/* line 277, ../sass/_browser_reset.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -316,7 +287,6 @@ input[type="search"] {
  * Remove inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
-/* line 289, ../sass/_browser_reset.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -325,7 +295,6 @@ input[type="search"]::-webkit-search-decoration {
 /**
  * Remove inner padding and border in Firefox 3+.
  */
-/* line 298, ../sass/_browser_reset.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -336,7 +305,6 @@ input::-moz-focus-inner {
  * 1. Remove default vertical scrollbar in IE 6/7/8/9.
  * 2. Improve readability and alignment in all browsers.
  */
-/* line 309, ../sass/_browser_reset.scss */
 textarea {
   overflow: auto;
   /* 1 */
@@ -347,13 +315,11 @@ textarea {
 /**
  * Remove most spacing between table cells.
  */
-/* line 318, ../sass/_browser_reset.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 323, ../sass/_browser_reset.scss */
 html,
 button,
 input,
@@ -362,40 +328,30 @@ textarea {
   color: #222;
 }
 
-/* line 332, ../sass/_browser_reset.scss */
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
 }
 
-/* line 337, ../sass/_browser_reset.scss */
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
 ::selection {
   background: #b3d4fc;
   text-shadow: none;
 }
 
-/* line 342, ../sass/_browser_reset.scss */
 img {
   vertical-align: middle;
 }
 
-/* line 346, ../sass/_browser_reset.scss */
 fieldset {
   border: 0;
   margin: 0;
   padding: 0;
 }
 
-/* line 352, ../sass/_browser_reset.scss */
 textarea {
   resize: vertical;
 }
 
-/* line 356, ../sass/_browser_reset.scss */
 .chromeframe {
   margin: 0.2em 0;
   background: #ccc;
@@ -403,14 +359,12 @@ textarea {
   padding: 0.2em 0;
 }
 
-/* line 2, ../sass/_backgrond_images.scss */
 html,
 body {
   height: 100%;
   width: 100%;
 }
 
-/* line 7, ../sass/_backgrond_images.scss */
 .wedding-wrapper-bg {
   background: url(../../img/backgrounds/brqx_wedding_desktop_1920_2018.png);
   height: 100%;
@@ -420,7 +374,6 @@ body {
   background-attachment: fixed;
 }
 
-/* line 1, ../sass/_device_container.scss */
 .wedding-container {
   width: 100%;
   padding-right: 15px;
@@ -430,165 +383,160 @@ body {
 }
 
 @media (min-width: 320px) {
-  /* line 11, ../sass/_device_container.scss */
   .wedding-container {
     max-width: 300px;
     height: inherit;
   }
 }
+
 @media (min-width: 480px) {
-  /* line 18, ../sass/_device_container.scss */
   .wedding-container {
     max-width: 460px;
     height: inherit;
   }
 }
+
 @media (min-width: 540px) {
-  /* line 25, ../sass/_device_container.scss */
   .wedding-container {
     max-width: 520px;
     height: inherit;
   }
 }
+
 @media (min-width: 640px) {
-  /* line 32, ../sass/_device_container.scss */
   .wedding-container {
     max-width: 610px;
     height: inherit;
   }
 }
+
 @media (min-width: 750px) {
-  /* line 39, ../sass/_device_container.scss */
   .wedding-container {
     max-width: 720px;
     height: inherit;
   }
 }
+
 @media (min-width: 800px) {
-  /* line 46, ../sass/_device_container.scss */
   .wedding-container {
     max-width: 750px;
     height: inherit;
   }
 }
+
 @media (min-width: 1080px) {
-  /* line 53, ../sass/_device_container.scss */
   .wedding-container {
     max-width: 1050px;
     height: inherit;
   }
 }
+
 @media (min-width: 1280px) {
-  /* line 60, ../sass/_device_container.scss */
   .wedding-container {
     max-width: 1170px;
     height: inherit;
   }
 }
+
 @media (min-width: 1366px) {
-  /* line 67, ../sass/_device_container.scss */
   .wedding-container {
     max-width: 1170px;
     height: inherit;
   }
 }
+
 @media (min-width: 1440px) {
-  /* line 74, ../sass/_device_container.scss */
   .wedding-container {
     max-width: 1280px;
     height: inherit;
   }
 }
+
 @media (min-width: 1600px) {
-  /* line 81, ../sass/_device_container.scss */
   .wedding-container {
     max-width: 1440px;
     height: inherit;
   }
 }
+
 @media (min-width: 1920px) {
-  /* line 88, ../sass/_device_container.scss */
   .wedding-container {
     max-width: 1800px;
     height: inherit;
   }
 }
+
 @media (min-width: 2160px) {
-  /* line 95, ../sass/_device_container.scss */
   .wedding-container {
     max-width: 2048px;
     height: inherit;
   }
 }
+
 @media (min-width: 2560px) {
-  /* line 102, ../sass/_device_container.scss */
   .wedding-container {
     max-width: 2160px;
     height: inherit;
   }
 }
+
 @media (min-width: 2732px) {
-  /* line 109, ../sass/_device_container.scss */
   .wedding-container {
     max-width: 2560px;
     height: inherit;
   }
 }
+
 @media (min-width: 3000px) {
-  /* line 116, ../sass/_device_container.scss */
   .wedding-container {
     max-width: 2732px;
     height: inherit;
   }
 }
+
 @media (min-width: 3840px) {
-  /* line 123, ../sass/_device_container.scss */
   .wedding-container {
     max-width: 3500px;
     height: inherit;
   }
 }
+
 @media (min-width: 4096px) {
-  /* line 130, ../sass/_device_container.scss */
   .wedding-container {
     max-width: 3840px;
     height: inherit;
   }
 }
+
 @media (min-width: 5120px) {
-  /* line 137, ../sass/_device_container.scss */
   .wedding-container {
     max-width: 4096px;
     height: inherit;
   }
 }
-/* line 2, ../sass/_wedding_header_logo.scss */
+
 section.wedding-header-wrapper {
   position: relative;
   z-index: 1;
 }
 
-/* line 8, ../sass/_wedding_header_logo.scss */
 .wedding-logo-left {
   display: inline-block;
   width: 300px;
   float: left;
 }
 
-/* line 13, ../sass/_wedding_header_logo.scss */
 .wedding-logo-left a img {
   width: 85%;
   height: auto;
 }
 
-/* line 18, ../sass/_wedding_header_logo.scss */
 .wedding-logo-right {
   display: inline-block;
   width: 300px;
   float: right;
 }
 
-/* line 24, ../sass/_wedding_header_logo.scss */
 .wedding-logo-right a img {
   height: auto;
   width: 150px;
@@ -596,13 +544,11 @@ section.wedding-header-wrapper {
   right: 0;
 }
 
-/* line 1, ../sass/_heart_area.scss */
 .heart-wrapper {
   position: relative;
   padding: 0px 80px;
 }
 
-/* line 5, ../sass/_heart_area.scss */
 section.heart-bg {
   margin-right: auto;
   position: inherit;
@@ -610,7 +556,6 @@ section.heart-bg {
   margin-left: auto;
 }
 
-/* line 11, ../sass/_heart_area.scss */
 section.heart-bg > img {
   width: 100%;
   height: auto;
@@ -618,7 +563,6 @@ section.heart-bg > img {
   margin-top: 25px;
 }
 
-/* line 2, ../sass/_rebone.scss */
 section.ribone-border-1,
 section.ribone-border-2,
 section.ribone-border-3,
@@ -626,7 +570,6 @@ section.ribone-border-4 {
   position: relative;
 }
 
-/* line 9, ../sass/_rebone.scss */
 section.ribone-border-1::before {
   content: "";
   width: 100%;
@@ -638,7 +581,6 @@ section.ribone-border-1::before {
   margin-top: 100px;
 }
 
-/* line 20, ../sass/_rebone.scss */
 section.ribone-border-2::before {
   content: "";
   width: 15px;
@@ -649,7 +591,6 @@ section.ribone-border-2::before {
   left: 0;
 }
 
-/* line 30, ../sass/_rebone.scss */
 section.ribone-border-4::before {
   content: "";
   width: 15px;
@@ -660,7 +601,6 @@ section.ribone-border-4::before {
   right: 0;
 }
 
-/* line 40, ../sass/_rebone.scss */
 section.ribone-border-3::before {
   content: "";
   width: 100%;
@@ -671,7 +611,6 @@ section.ribone-border-3::before {
   bottom: 15px;
 }
 
-/* line 51, ../sass/_rebone.scss */
 section.ribone-border-1::after {
   content: url("../../img/ribbons/brqx_ribbon_double_0100_2018.png");
   width: 100px;
@@ -685,7 +624,6 @@ section.ribone-border-1::after {
   z-index: 1;
 }
 
-/* line 65, ../sass/_rebone.scss */
 section.ribone-border-3::after {
   position: absolute;
   content: url("../../img/ribbons/brqx_ribbon_double_0100_2018.png");
@@ -698,7 +636,6 @@ section.ribone-border-3::after {
   margin-bottom: 0px;
 }
 
-/* line 1, ../sass/_main_slide_text.scss */
 .main-slude-text-container {
   position: absolute;
   top: 48%;
@@ -710,42 +647,36 @@ section.ribone-border-3::after {
   padding: 77px;
 }
 
-/* line 12, ../sass/_main_slide_text.scss */
 .scroll-inner-container {
   position: relative;
 }
 
-/* line 15, ../sass/_main_slide_text.scss */
 .scroll-inner-container {
   height: calc(245px + 0px);
   overflow: auto;
 }
 
-/* line 21, ../sass/_main_slide_text.scss */
 .social-image-area {
   background-color: #eaeaea;
   padding: 15px 15px 15px 15px;
   text-align: justify;
 }
 
-/* line 29, ../sass/_main_slide_text.scss */
 .social-image-area img {
   padding-right: 15px;
   padding-bottom: 5px;
 }
 
-/* line 35, ../sass/_main_slide_text.scss */
 .scroll-inner-container::-webkit-scrollbar {
   display: none;
   position: absolute;
 }
 
-/* line 40, ../sass/_main_slide_text.scss */
 .social-image-area p:nth-child(odd) {
   color: #605E1A;
 }
 
-/* line 44, ../sass/_main_slide_text.scss */
 .social-image-area p:nth-child(even) {
   color: #581A7D;
 }
+/*# sourceMappingURL=wedding.css.map */
