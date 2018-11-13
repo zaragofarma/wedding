@@ -636,7 +636,7 @@ section.ribone-border-3::after {
   margin-bottom: 0px;
 }
 
-.main-slude-text-container {
+.main-slide-text-container {
   position: absolute;
   top: 48%;
   left: 50%;
@@ -678,5 +678,14 @@ section.ribone-border-3::after {
 
 .social-image-area p:nth-child(even) {
   color: #581A7D;
+}
+
+section.social-media-icon-left {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(70%, -69%);
+          transform: translate(70%, -69%);
 }
 /*# sourceMappingURL=wedding.css.map */

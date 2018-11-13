@@ -699,7 +699,7 @@ section.ribone-border-3::after {
 }
 
 /* line 1, ../sass/_main_slide_text.scss */
-.main-slude-text-container {
+.main-slide-text-container {
   position: absolute;
   top: 48%;
   left: 50%;
@@ -748,4 +748,14 @@ section.ribone-border-3::after {
 /* line 44, ../sass/_main_slide_text.scss */
 .social-image-area p:nth-child(even) {
   color: #581A7D;
+}
+
+/* line 1, ../sass/_social-icon.scss */
+section.social-media-icon-left {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(70%, -69%);
+          transform: translate(70%, -69%);
 }
