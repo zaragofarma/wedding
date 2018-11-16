@@ -2,7 +2,25 @@ section.social-media-icon-left {
     position: absolute;
     z-index: 1;
     top: 50%;
-    left: 0;
-    transform: translate(70%, -69%);
+    left: 5px;
+    -webkit-transform: translate(70%, -69%);
+    transform: translate(100%, -66%);
+}
+section.social-media-icon-wrapper ul li a img {
+    width: 100%;
 }
 
+section.social-media-icon-wrapper ul li {
+    padding: 3px 0px;
+}
+
+section.social-media-icon-wrapper ul li a {
+    width: 32px;
+    height: 100%;
+    display: block;
+}
+.social-media-icon-wrapper{}
+.social-media-icon-wrapper ul{}
+.social-media-icon-wrapper ul li{}
+.social-media-icon-wrapper ul li a{}
+.social-media-icon-wrapper ul li a img{}
