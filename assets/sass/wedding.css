@@ -702,4 +702,32 @@ section.social-media-icon-wrapper ul li a {
   height: 100%;
   display: block;
 }
+
+section.right-side-menu-wrapper {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+section.right-side-menu {
+  position: absolute;
+  top: 44%;
+  right: 9%;
+  -webkit-transform: translate(50%, -56%);
+          transform: translate(50%, -56%);
+}
+
+section.right-side-menu-wrapper ul li {
+  display: inline;
+  margin: -2px;
+}
+
+section.right-side-menu-wrapper ul li a {
+  display: inline-block;
+  padding: 5px;
+  border: 1px solid #000;
+  background-color: #fff;
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: none;
+}
 /*# sourceMappingURL=wedding.css.map */
