@@ -1,0 +1,22 @@
+section.right-side-menu-wrapper {
+    transform: rotate(90deg);
+}
+section.right-side-menu {
+    position: absolute;
+    top: 44%;
+    right: 9%;
+    transform: translate(50%, -56%);
+}
+section.right-side-menu-wrapper ul li {
+    display: inline;
+    margin: -2px;
+}
+section.right-side-menu-wrapper ul li a {
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid #000;
+    background-color: #fff;
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+}
