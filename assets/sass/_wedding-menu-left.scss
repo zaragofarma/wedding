@@ -9,10 +9,37 @@ section.wedding-menu-left-icon {
     position: absolute;
     left: 50%;
     top: -15%;
-    transform: translate(70%);
+    -webkit-transform: translate(70%);
+    transform: translate(18%, 0%);
 }
 
 section.wedding-menu-left-icon a img {
     width: 100%;
     height: auto;
+}
+
+ul.main-menu-left {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+
+ul.main-menu-left li {
+    display: inline-block;
+}
+
+ul.main-menu-left li a {
+    display: inline-block;
+    color: #000;
+    text-transform: uppercase;
+    padding: 5px;
+    font-size: 1rem;
+}
+
+section.wedding-menu-left-wrapper {
+    /* position: absolute; */
+    left: 0%;
+    top: 0%;
+    transform: translate(35%, 83%);
 }
