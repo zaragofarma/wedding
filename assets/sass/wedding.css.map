@@ -12,7 +12,8 @@
         "_main_slide_text.scss",
         "_social-icon.scss",
         "_sidebar-menu.scss",
-        "_wedding-menu-left.scss"
+        "_wedding-menu-left.scss",
+        "_wedding-right-menu.scss"
     ],
     "names": [],
     "file": "wedding.css"
