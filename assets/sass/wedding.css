@@ -730,4 +730,10 @@ section.right-side-menu-wrapper ul li a {
   text-transform: uppercase;
   text-decoration: none;
 }
+
+.wedding-menu-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 /*# sourceMappingURL=wedding.css.map */
