@@ -3,3 +3,16 @@
     right: 0;
     top: 0;
 }
+section.wedding-menu-right-icon {
+    width: 150px;
+    height: auto;
+    position: absolute;
+    top: -16%;
+    right: 100%;
+    transform: translate(-60%);
+}
+
+section.wedding-menu-right-icon a img {
+    width: 100%;
+    height: auto;
+}
