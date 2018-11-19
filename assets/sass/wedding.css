@@ -769,6 +769,7 @@ ul.main-menu-left li a {
   text-transform: uppercase;
   padding: 5px;
   font-size: 1rem;
+  text-decoration: none;
 }
 
 section.wedding-menu-left-wrapper {
@@ -792,11 +793,38 @@ section.wedding-menu-right-icon {
   top: -16%;
   right: 100%;
   -webkit-transform: translate(-60%);
-          transform: translate(-60%);
+  transform: translate(50%, 0%);
 }
 
 section.wedding-menu-right-icon a img {
   width: 100%;
   height: auto;
+}
+
+section.wedding-menu-right-wrapper {
+  right: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, 83%);
+          transform: translate(-50%, 83%);
+}
+
+ul.main-menu-right {
+  width: 100%;
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+}
+
+ul.main-menu-right li {
+  display: inline-block;
+}
+
+ul.main-menu-right li a {
+  display: inline-block;
+  color: #000;
+  text-transform: uppercase;
+  padding: 5px;
+  font-size: 1rem;
+  text-decoration: none;
 }
 /*# sourceMappingURL=wedding.css.map */
