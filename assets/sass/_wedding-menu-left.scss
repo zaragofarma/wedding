@@ -7,7 +7,7 @@ section.wedding-menu-left-icon {
     width: 150px;
     height: auto;
     position: absolute;
-    left: 50%;
+    left: 35%;
     top: -15%;
     -webkit-transform: translate(70%);
     transform: translate(18%, 0%);
@@ -27,14 +27,20 @@ ul.main-menu-left {
 
 ul.main-menu-left li {
     display: inline-block;
+    position: relative;
+    background-image: url(/img/tabs/brqx_tabs_no_selected_war_0100_2017.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0px;
 }
 
 ul.main-menu-left li a {
     display: inline-block;
     color: #000;
     text-transform: uppercase;
-    padding: 5px;
-    font-size: 1rem;
+    padding: 12px 12px;
+    font-size: .75rem;
     text-decoration: none;
 }
 
@@ -42,5 +48,6 @@ section.wedding-menu-left-wrapper {
     /* position: absolute; */
     left: 0%;
     top: 0%;
-    transform: translate(35%, 83%);
+    -webkit-transform: translate(35%, 83%);
+    transform: translate(33%, 40%);
 }
