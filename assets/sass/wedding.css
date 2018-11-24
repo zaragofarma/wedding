@@ -871,4 +871,12 @@ input#wedding-search {
   border: 0px;
   width: 150px;
 }
+
+.form-group.wedding-form span i {
+  position: absolute;
+  right: 23%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
 /*# sourceMappingURL=wedding.css.map */
