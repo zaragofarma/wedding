@@ -762,7 +762,7 @@ ul.main-menu-left {
 ul.main-menu-left li {
   display: inline-block;
   position: relative;
-  background-image: url(/img/tabs/brqx_tabs_no_selected_war_0100_2017.png);
+  background-image: url(../../img/tabs/brqx_tabs_no_selected_war_0100_2017.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -824,7 +824,7 @@ ul.main-menu-right {
 ul.main-menu-right li {
   display: inline-block;
   position: relative;
-  background-image: url(/img/tabs/brqx_tabs_no_selected_war_0100_2017.png);
+  background-image: url(../../img/tabs/brqx_tabs_no_selected_war_0100_2017.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -848,11 +848,12 @@ ul.main-menu-right li a {
           transform: translate(-50%, 0%);
   width: 300px;
   height: 65px;
+  z-index: 10;
 }
 
 .form-group.wedding-form {
   margin-bottom: 0rem;
-  background-image: url(/img/hearts/brqx_search_heart_blue_0200_2018.png);
+  background-image: url(../../img/hearts/brqx_search_heart_blue_0200_2018.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -885,14 +886,65 @@ input#wedding-search {
 
 section.lang-select-flag-combo {
   position: absolute;
-  bottom: 0;
-  left: 23%;
-  z-index: 1;
-  -webkit-transform: translate(-50%, 0%);
-          transform: translate(-50%, 0%);
+  bottom: -30%;
+  left: 50%;
+  z-index: 5;
+  -webkit-transform: translate(-50%, -25%);
+  transform: translate(-50%, -25%);
+  width: 100%;
+  height: 35%;
+  padding: 0px 120px;
 }
 
-section.single-flag-images span img {
+.single-flag-images {
+  position: relative;
+}
+
+section.single-flag-images span a img {
   width: 69px;
+}
+
+span.flag-combo-1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+span.flag-combo-2 {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+span.flag-combo-3 {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+span.flag-combo-4 {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+}
+
+span.flag-combo-5 {
+  position: absolute;
+  top: 90px;
+  left: 108px;
+}
+
+span.flag-combo-6 {
+  position: absolute;
+  top: 90px;
+  right: 108px;
+}
+
+span.flag-combo-7 {
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  -webkit-transform: translate(-50%, 200%);
+  transform: translate(-50%, 200%);
 }
 /*# sourceMappingURL=wedding.css.map */
