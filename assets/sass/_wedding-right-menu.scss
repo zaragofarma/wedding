@@ -8,7 +8,7 @@ section.wedding-menu-right-icon {
     height: auto;
     position: absolute;
     top: -16%;
-    right: 82%;
+    right: 72%;
     -webkit-transform: translate(-60%);
     transform: translate(50%, 0%);
 }
@@ -22,7 +22,8 @@ section.wedding-menu-right-wrapper {
     right: 0%;
     top: 50%;
     -webkit-transform: translate(-50%, 83%);
-    transform: translate(-33%, 40%);
+    transform: translate(-21%, 40%);
+    margin-top: 0px;
 }
 
 ul.main-menu-right {
@@ -30,6 +31,9 @@ ul.main-menu-right {
     position: relative;
     margin: 0px;
     padding: 0px;
+    float: left;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 ul.main-menu-right li {
@@ -49,4 +53,35 @@ ul.main-menu-right li a {
     padding: 12px 12px;
     font-size: .75rem;
     text-decoration: none;
+}
+
+
+// CSS for slider(horizontal menu slider)
+
+.wedding-menu-right-outer{
+    position: relative;
+    display: table-cell;
+}
+section.wedding-menu-right-inner {
+    float: left;
+    position: relative;
+}
+.wedding-menu-right-outer i {
+    font-size: 25px;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+}
+.wedding-menu-right-wrapper > .wedding-menu-right-outer > i{
+    visibility: hidden;
+    position: relative;
+}
+.wedding-menu-right-wrapper > .wedding-menu-right-outer:hover i{
+    visibility: visible;
+}
+.wedding-menu-right-outer i.left-arrow{
+    margin-right: 10px;
+}
+.wedding-menu-right-outer i.right-arrow{
+    margin-left: 10px;
 }
