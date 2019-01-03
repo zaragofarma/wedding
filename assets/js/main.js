@@ -104,6 +104,118 @@ function handleMouseMove(e) {
             div.stop();
         }
  };
+
+
+
+
+    // wedding left menu start
+    // =========================
+    
+    let scrollSpeed = 10;
+	function horizontal_Menu_Width(){
+		$('.wedding-menu-left-outer, .wedding-menu-right-outer').each(function(){
+			let id = makeid();
+			$(this).attr("id", id);
+			//total width of horizontal menu with 2 arrow.
+			let horizontalMenuWidth = $(this).width();
+			 console.log("horizontal-menu : "+horizontalMenuWidth);
+			// width of the arrow
+			let horizontalMenuArrowWidth = $(this).children('i').outerWidth(true);
+			console.log(horizontalMenuArrowWidth);
+			// total-width - 2 arrow-width = menu-container width;
+			let mainContainerWidth = horizontalMenuWidth - (horizontalMenuArrowWidth*2);
+			// console.log(mainContainerWidth);
+			$(this).children('.wedding-menu-left-inner, .wedding-menu-right-inner').css('width', 227);	
+		});
+	}
+	// initialization horizontal menu width function
+	horizontal_Menu_Width();
+    // for left menu
+    // -----------------
+	$('.wedding-menu-left-outer > i').on('mouseenter', function(){
+		// init class,ID on valiable when mouse inter
+		let horizontalMenuParentID = $(this).parent('.wedding-menu-left-outer')[0].id;
+		let leftArrow = $(this).hasClass('left-arrow');
+		let rightArrow = $(this).hasClass('right-arrow');
+
+		// need to find total width of "menu-inner-container" class
+		let horizontalMenuScrollableWidth = $("#"+horizontalMenuParentID+" >.wedding-menu-left-inner>.main-menu-left")[0].scrollWidth;
+		console.log(horizontalMenuScrollableWidth);
+
+		//need to find out visible width of "menu-inner-container" class
+		let menuInnerContainerWidth = $("#"+horizontalMenuParentID+" >.wedding-menu-left-inner>.main-menu-left").width();
+		console.log(menuInnerContainerWidth);
+
+		//this is the value of total scrolable area of horizontal menu
+		let horizontalMenuScroll = horizontalMenuScrollableWidth - menuInnerContainerWidth;
+		console.log(horizontalMenuScroll);
+
+		//now we need to make a scroll left of "total scrolable area"
+		let scrollableMenu = horizontalMenuScroll - $("#"+horizontalMenuParentID+" >.wedding-menu-left-inner>.main-menu-left").scrollLeft();
+		// when mouse inter in right-arrow
+		if(rightArrow){
+			$("#"+horizontalMenuParentID+" >.wedding-menu-left-inner>.main-menu-left").animate({
+				scrollLeft: horizontalMenuScroll
+			},scrollSpeed*scrollableMenu);
+		} else if(leftArrow){
+			$("#"+horizontalMenuParentID+" >.wedding-menu-left-inner>.main-menu-left").animate({
+				scrollLeft: 0
+			},scrollSpeed * $("#"+horizontalMenuParentID+" >.wedding-menu-left-inner>.main-menu-left").scrollLeft());
+		}
+	});
+
+	// when mouse leave from arrow then scroll should stop
+
+	$('.wedding-menu-left-outer > i').on('mouseleave', function(){
+		let horizontalMenuParentID = $(this).parent('.wedding-menu-left-outer')[0].id;
+		$("#"+horizontalMenuParentID+" >.wedding-menu-left-inner>.main-menu-left").stop();
+    });
+    
+    // for right menu
+    // -----------------
+	$('.wedding-menu-right-outer > i').on('mouseenter', function(){
+		// init class,ID on valiable when mouse inter
+		let horizontalMenuParentID = $(this).parent('.wedding-menu-right-outer')[0].id;
+		let leftArrow = $(this).hasClass('left-arrow');
+		let rightArrow = $(this).hasClass('right-arrow');
+
+		// need to find total width of "menu-inner-container" class
+		let horizontalMenuScrollableWidth = $("#"+horizontalMenuParentID+" >.wedding-menu-right-inner>.main-menu-right")[0].scrollWidth;
+		console.log("right menu "+ horizontalMenuScrollableWidth);
+
+		//need to find out visible width of "menu-inner-container" class
+		let menuInnerContainerWidth = $("#"+horizontalMenuParentID+" >.wedding-menu-right-inner>.main-menu-right").width();
+		console.log(menuInnerContainerWidth);
+
+		//this is the value of total scrolable area of horizontal menu
+		let horizontalMenuScroll = horizontalMenuScrollableWidth - menuInnerContainerWidth;
+		console.log(horizontalMenuScroll);
+
+		//now we need to make a scroll left of "total scrolable area"
+		let scrollableMenu = horizontalMenuScroll - $("#"+horizontalMenuParentID+" >.wedding-menu-right-inner>.main-menu-right").scrollLeft();
+		// when mouse inter in right-arrow
+		if(rightArrow){
+			$("#"+horizontalMenuParentID+" >.wedding-menu-right-inner>.main-menu-right").animate({
+				scrollLeft: horizontalMenuScroll
+			},scrollSpeed*scrollableMenu);
+		} else if(leftArrow){
+			$("#"+horizontalMenuParentID+" >.wedding-menu-right-inner>.main-menu-right").animate({
+				scrollLeft: 0
+			},scrollSpeed * $("#"+horizontalMenuParentID+" >.wedding-menu-right-inner>.main-menu-right").scrollLeft());
+		}
+	});
+
+
+
+	// when mouse leave from arrow then scroll should stop
+
+	$('.wedding-menu-right-outer > i').on('mouseleave', function(){
+		let horizontalMenuParentID = $(this).parent('.wedding-menu-right-outer')[0].id;
+		$("#"+horizontalMenuParentID+" >.wedding-menu-right-inner>.main-menu-right").stop();
+	});
+
+    // wedding left menu END
+    // =========================
     // document ready function end
 });
 
