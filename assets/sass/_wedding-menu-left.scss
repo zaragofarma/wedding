@@ -23,6 +23,9 @@ ul.main-menu-left {
     margin: 0px;
     padding: 0px;
     position: relative;
+    float: left;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 ul.main-menu-left li {
@@ -49,5 +52,36 @@ section.wedding-menu-left-wrapper {
     left: 0%;
     top: 0%;
     -webkit-transform: translate(35%, 83%);
-    transform: translate(33%, 40%);
+    transform: translate(21%, 40%);
+    margin-top: 0px;
+}
+
+// CSS for slider(horizontal menu slider)
+
+.wedding-menu-left-outer{
+    position: relative;
+    display: table-cell;
+}
+section.wedding-menu-left-inner {
+    float: left;
+    position: relative;
+}
+.wedding-menu-left-outer i {
+    font-size: 25px;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+}
+.wedding-menu-left-wrapper > .wedding-menu-left-outer > i{
+    visibility: hidden;
+    position: relative;
+}
+.wedding-menu-left-wrapper > .wedding-menu-left-outer:hover i{
+    visibility: visible;
+}
+.wedding-menu-left-outer i.left-arrow{
+    margin-right: 10px;
+}
+.wedding-menu-left-outer i.right-arrow{
+    margin-left: 10px;
 }
