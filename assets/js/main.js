@@ -120,11 +120,11 @@ function handleMouseMove(e) {
 			let horizontalMenuWidth = $(this).width();
 			 console.log("horizontal-menu : "+horizontalMenuWidth);
 			// width of the arrow
-			let horizontalMenuArrowWidth = $(this).children('i').outerWidth(true);
-			console.log(horizontalMenuArrowWidth);
+			let horizontalMenuArrowWidth = $(this).children('img').outerWidth(true);
+			console.log("horizontalMenuArrowWidth " + horizontalMenuArrowWidth);
 			// total-width - 2 arrow-width = menu-container width;
 			let mainContainerWidth = horizontalMenuWidth - (horizontalMenuArrowWidth*2);
-			// console.log(mainContainerWidth);
+			console.log(mainContainerWidth);
 			$(this).children('.wedding-menu-left-inner, .wedding-menu-right-inner').css('width', 227);	
 		});
 	}
@@ -132,7 +132,7 @@ function handleMouseMove(e) {
 	horizontal_Menu_Width();
     // for left menu
     // -----------------
-	$('.wedding-menu-left-icon > img.menu-hover-icon').on('mouseenter', function(){
+	$('.wedding-menu-left-outer > img').on('mouseenter', function(){
 		// init class,ID on valiable when mouse inter
 		let horizontalMenuParentID = $(this).parent('.wedding-menu-left-outer')[0].id;
 		let leftArrow = $(this).hasClass('left-arrow');
@@ -166,7 +166,7 @@ function handleMouseMove(e) {
 
 	// when mouse leave from arrow then scroll should stop
 
-	$('.wedding-menu-left-outer > i').on('mouseleave', function(){
+	$('.wedding-menu-left-outer > img').on('mouseleave', function(){
 		let horizontalMenuParentID = $(this).parent('.wedding-menu-left-outer')[0].id;
 		$("#"+horizontalMenuParentID+" >.wedding-menu-left-inner>.main-menu-left").stop();
     });
