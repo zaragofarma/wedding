@@ -1,22 +1,23 @@
 .wedding-menu-left{
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: relative;
+    top: -24%;
+    left: 85%;
+    transform: translate(-50%, -50%);
 }
-section.wedding-menu-left-icon {
+img.wedding-menu-left-icon {
     width: 150px;
     height: auto;
     position: absolute;
-    left: 35%;
-    top: -15%;
-    -webkit-transform: translate(70%);
-    transform: translate(18%, 0%);
+    left: -150px;
+    top: -20px;
+    cursor: pointer;
+
 }
 
-section.wedding-menu-left-icon a img {
-    width: 100%;
-    height: auto;
-}
+// section.wedding-menu-left-icon a img {
+//     width: 100%;
+//     height: auto;
+// }
 
 ul.main-menu-left {
     width: 100%;
@@ -48,12 +49,11 @@ ul.main-menu-left li a {
 }
 
 section.wedding-menu-left-wrapper {
-    /* position: absolute; */
+    position: absolute;
     left: 0%;
     top: 0%;
-    -webkit-transform: translate(35%, 83%);
-    transform: translate(35%, 40%);
-    margin-top: 0px;
+    width: 100%;
+    height: auto;
 }
 
 // CSS for slider(horizontal menu slider)
@@ -61,10 +61,12 @@ section.wedding-menu-left-wrapper {
 .wedding-menu-left-outer{
     position: relative;
     display: table-cell;
+    width: 100%;
 }
 section.wedding-menu-left-inner {
     float: left;
-    position: relative;
+    position: absolute;
+    left: -191px;
 }
 .wedding-menu-left-outer i {
     font-size: 25px;
@@ -80,8 +82,8 @@ section.wedding-menu-left-inner {
     visibility: visible;
 }
 .wedding-menu-left-outer i.left-arrow{
-    margin-right: 10px;
+    // margin-right: 10px;
 }
 .wedding-menu-left-outer i.right-arrow{
-    margin-left: 10px;
+    // margin-left: 10px;
 }

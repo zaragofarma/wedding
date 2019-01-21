@@ -732,24 +732,20 @@ section.right-side-menu-wrapper ul li a {
 }
 
 .wedding-menu-left {
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
+  top: -24%;
+  left: 85%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
-section.wedding-menu-left-icon {
+img.wedding-menu-left-icon {
   width: 150px;
   height: auto;
   position: absolute;
-  left: 35%;
-  top: -15%;
-  -webkit-transform: translate(70%);
-  transform: translate(18%, 0%);
-}
-
-section.wedding-menu-left-icon a img {
-  width: 100%;
-  height: auto;
+  left: -150px;
+  top: -20px;
+  cursor: pointer;
 }
 
 ul.main-menu-left {
@@ -782,22 +778,23 @@ ul.main-menu-left li a {
 }
 
 section.wedding-menu-left-wrapper {
-  /* position: absolute; */
+  position: absolute;
   left: 0%;
   top: 0%;
-  -webkit-transform: translate(35%, 83%);
-  transform: translate(35%, 40%);
-  margin-top: 0px;
+  width: 100%;
+  height: auto;
 }
 
 .wedding-menu-left-outer {
   position: relative;
   display: table-cell;
+  width: 100%;
 }
 
 section.wedding-menu-left-inner {
   float: left;
-  position: relative;
+  position: absolute;
+  left: -191px;
 }
 
 .wedding-menu-left-outer i {
@@ -816,33 +813,19 @@ section.wedding-menu-left-inner {
   visibility: visible;
 }
 
-.wedding-menu-left-outer i.left-arrow {
-  margin-right: 10px;
-}
-
-.wedding-menu-left-outer i.right-arrow {
-  margin-left: 10px;
-}
-
 .wedding-menu-right {
   position: absolute;
   right: 0;
   top: 0;
 }
 
-section.wedding-menu-right-icon {
+img.wedding-menu-right-icon {
   width: 150px;
   height: auto;
   position: absolute;
-  top: -16%;
-  right: 72%;
-  -webkit-transform: translate(-60%);
-  transform: translate(50%, 0%);
-}
-
-section.wedding-menu-right-icon a img {
-  width: 100%;
-  height: auto;
+  left: 150px;
+  top: -20px;
+  cursor: pointer;
 }
 
 section.wedding-menu-right-wrapper {
@@ -888,8 +871,9 @@ ul.main-menu-right li a {
 }
 
 section.wedding-menu-right-inner {
-  float: left;
-  position: relative;
+  float: right;
+  position: absolute;
+  left: 128px;
 }
 
 .wedding-menu-right-outer i {
@@ -906,14 +890,6 @@ section.wedding-menu-right-inner {
 
 .wedding-menu-right-wrapper > .wedding-menu-right-outer:hover i {
   visibility: visible;
-}
-
-.wedding-menu-right-outer i.left-arrow {
-  margin-right: 10px;
-}
-
-.wedding-menu-right-outer i.right-arrow {
-  margin-left: 10px;
 }
 
 .search-bar-area {
