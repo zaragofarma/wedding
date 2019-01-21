@@ -132,7 +132,7 @@ function handleMouseMove(e) {
 	horizontal_Menu_Width();
     // for left menu
     // -----------------
-	$('.wedding-menu-left-outer > i').on('mouseenter', function(){
+	$('.wedding-menu-left-icon > img.menu-hover-icon').on('mouseenter', function(){
 		// init class,ID on valiable when mouse inter
 		let horizontalMenuParentID = $(this).parent('.wedding-menu-left-outer')[0].id;
 		let leftArrow = $(this).hasClass('left-arrow');
