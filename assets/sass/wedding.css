@@ -592,8 +592,8 @@ section.right-side-menu-wrapper ul li a {
 
 .wedding-menu-left {
   position: relative;
-  top: -24%;
-  left: 85%;
+  top: -19%;
+  left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
@@ -646,14 +646,11 @@ section.wedding-menu-left-wrapper {
 
 .wedding-menu-left-outer {
   position: relative;
-  display: table-cell;
   width: 100%;
 }
 
 section.wedding-menu-left-inner {
   float: left;
-  position: absolute;
-  left: -191px;
 }
 
 .wedding-menu-left-outer i {
@@ -664,12 +661,7 @@ section.wedding-menu-left-inner {
 }
 
 .wedding-menu-left-wrapper > .wedding-menu-left-outer > i {
-  visibility: hidden;
   position: relative;
-}
-
-.wedding-menu-left-wrapper > .wedding-menu-left-outer:hover i {
-  visibility: visible;
 }
 
 .wedding-menu-right {
@@ -857,96 +849,6 @@ span.flag-combo-7 {
   top: 100%;
   -webkit-transform: translate(-50%, 200%);
   transform: translate(-50%, 200%);
-}
-
-@media (max-width: 319px) {
-  .wedding-container {
-    max-width: 300px;
-    height: inherit;
-  }
-  .wedding-wrapper-bg {
-    background-color: red !important;
-  }
-  section.heart-bg {
-    width: 300px !important;
-  }
-}
-
-@media (min-width: 320px) {
-  .wedding-container {
-    max-width: 300px;
-    height: inherit;
-  }
-  section.heart-bg {
-    width: 300px !important;
-  }
-  .wedding-wrapper-bg {
-    background-color: green !important;
-  }
-}
-
-@media (max-width: 480px) {
-  .wedding-container {
-    max-width: 460px;
-    height: inherit;
-  }
-  section.heart-bg {
-    width: 460px !important;
-  }
-}
-
-@media (min-width: 540px) {
-  .wedding-container {
-    max-width: 520px;
-    height: inherit;
-  }
-}
-
-@media (max-width: 540px) {
-  .wedding-wrapper-bg {
-    background-color: #F1D4E1;
-    background-image: none;
-  }
-  .wedding-logo-right {
-    display: none;
-  }
-  .heart-wrapper {
-    padding: 0px 0px;
-  }
-  section.heart-bg {
-    max-width: 520px;
-  }
-  .heart-bg > img {
-    display: none;
-  }
-  section.lang-select-flag-combo {
-    display: none;
-  }
-  .main-slide-text-container {
-    position: absolute;
-    top: 0%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -29%);
-    transform: translate(-53%, 23%);
-    width: 100%;
-    height: 400px;
-    padding: 0px;
-  }
-  .wedding-menu-left {
-    display: none;
-  }
-  section.right-side-menu {
-    display: none;
-  }
-  section.social-media-icon-left {
-    display: none;
-  }
-  .form-group.wedding-form {
-    background-image: none;
-  }
-  .ribone-border-1, .ribone-border-2, .ribone-border-3, .ribone-border-4 {
-    display: none;
-  }
 }
 
 .wedding-container {
