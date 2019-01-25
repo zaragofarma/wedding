@@ -121,10 +121,10 @@ function handleMouseMove(e) {
 			 console.log("horizontal-menu : "+horizontalMenuWidth);
 			// width of the arrow
 			let horizontalMenuArrowWidth = $(this).children('i').outerWidth(true);
-			console.log("horizontalMenuArrowWidth " + horizontalMenuArrowWidth);
+			// console.log("horizontalMenuArrowWidth " + horizontalMenuArrowWidth);
 			// total-width - 2 arrow-width = menu-container width;
 			let mainContainerWidth = horizontalMenuWidth - (horizontalMenuArrowWidth*2);
-			console.log(mainContainerWidth);
+			// console.log(mainContainerWidth);
 			$(this).children('.wedding-menu-left-inner').css('width', mainContainerWidth);	
 		});
 	}
@@ -151,8 +151,9 @@ function handleMouseMove(e) {
 		console.log(horizontalMenuScroll);
 
 		//now we need to make a scroll left of "total scrolable area"
-		let scrollableMenu = horizontalMenuScroll - $("#"+horizontalMenuParentID+" >.wedding-menu-left-inner>.main-menu-left").scrollLeft();
-		// when mouse inter in right-arrow
+        let scrollableMenu = horizontalMenuScroll - $("#"+horizontalMenuParentID+" >.wedding-menu-left-inner>.main-menu-left").scrollLeft();
+        console.log("scrollableMenu : "+ (scrollSpeed*scrollableMenu))
+		// when mouse inter in right-arrow then scroll start
 		if(rightArrow){
 			$("#"+horizontalMenuParentID+" >.wedding-menu-left-inner>.main-menu-left").animate({
 				scrollLeft: horizontalMenuScroll
@@ -161,7 +162,38 @@ function handleMouseMove(e) {
 			$("#"+horizontalMenuParentID+" >.wedding-menu-left-inner>.main-menu-left").animate({
 				scrollLeft: 0
 			},scrollSpeed * $("#"+horizontalMenuParentID+" >.wedding-menu-left-inner>.main-menu-left").scrollLeft());
-		}
+        }
+
+
+
+        // gape between left menu all code start  from here
+        
+
+        if(rightArrow){
+            let position = 4;
+            let intervel = setInterval(function(){
+                position++;
+                // $('.active').removeClass('active');
+                // $(this).addClass('active');
+                $(".wedding-menu-left-inner > ul > li").addClass("active").siblings(".active").removeClass('active');
+                $(".wedding-menu-left-inner > ul > li:nth-child("+ position +")").css({
+                    "margin-right" : "100px"
+                })
+                if(position == 16){
+                    clearInterval(intervel);
+                }
+                console.log("position number :"+ position);
+            },1000);
+
+            // $(".wedding-menu-left-inner > ul > li:nth-child("+ position +")").animate({
+            //     "margin-right":"100px"
+            // },scrollSpeed*scrollableMenu);
+
+        }else if(leftArrow){
+            console.log("animate start...");
+        }
+
+
 	});
 
 	// when mouse leave from arrow then scroll should stop
