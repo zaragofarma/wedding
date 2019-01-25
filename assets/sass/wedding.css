@@ -627,6 +627,10 @@ ul.main-menu-left li {
   padding: 0px;
 }
 
+.wedding-menu-left-inner > ul > li.active {
+  margin-right: 100px;
+}
+
 ul.main-menu-left li a {
   display: inline-block;
   color: #000;

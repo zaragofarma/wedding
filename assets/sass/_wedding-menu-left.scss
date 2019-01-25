@@ -38,7 +38,9 @@ ul.main-menu-left li {
     background-position: center;
     padding: 0px;
 }
-
+.wedding-menu-left-inner > ul > li.active{
+    margin-right: 100px;
+}
 ul.main-menu-left li a {
     display: inline-block;
     color: #000;
