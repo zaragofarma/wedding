@@ -164,33 +164,20 @@ function handleMouseMove(e) {
 			},scrollSpeed * $("#"+horizontalMenuParentID+" >.wedding-menu-left-inner>.main-menu-left").scrollLeft());
         }
 
-
-
         // gape between left menu all code start  from here
-        
-
+        let animationSpeed = (scrollSpeed*scrollableMenu)/13;
         if(rightArrow){
             let position = 4;
             let intervel = setInterval(function(){
                 position++;
-                // $('.active').removeClass('active');
-                // $(this).addClass('active');
-                $(".wedding-menu-left-inner > ul > li").addClass("active").siblings(".active").removeClass('active');
-                $(".wedding-menu-left-inner > ul > li:nth-child("+ position +")").css({
-                    "margin-right" : "100px"
-                })
+                $(".wedding-menu-left-inner > ul > li:nth-child("+ position +")").addClass("active").siblings(".active").removeClass('active');
                 if(position == 16){
                     clearInterval(intervel);
                 }
                 console.log("position number :"+ position);
-            },1000);
-
-            // $(".wedding-menu-left-inner > ul > li:nth-child("+ position +")").animate({
-            //     "margin-right":"100px"
-            // },scrollSpeed*scrollableMenu);
-
-        }else if(leftArrow){
-            console.log("animate start...");
+            },animationSpeed);
+        }else{
+            clearInterval(intervel);
         }
 
 
