@@ -165,20 +165,20 @@ function handleMouseMove(e) {
         }
 
         // gape between left menu all code start  from here
-        let animationSpeed = (scrollSpeed*scrollableMenu)/13;
-        if(rightArrow){
-            let position = 4;
-            let intervel = setInterval(function(){
-                position++;
-                $(".wedding-menu-left-inner > ul > li:nth-child("+ position +")").addClass("active").siblings(".active").removeClass('active');
-                if(position == 16){
-                    clearInterval(intervel);
-                }
-                console.log("position number :"+ position);
-            },animationSpeed);
-        }else{
-            clearInterval(intervel);
-        }
+        // let animationSpeed = (scrollSpeed*scrollableMenu)/13;
+        // if(rightArrow){
+        //     let position = 4;
+        //     let intervel = setInterval(function(){
+        //         position++;
+        //         $(".wedding-menu-left-inner > ul > li:nth-child("+ position +")").addClass("active").siblings(".active").removeClass('active');
+        //         if(position == 16){
+        //             clearInterval(intervel);
+        //         }
+        //         console.log("position number :"+ position);
+        //     },animationSpeed);
+        // }else{
+        //     clearInterval(intervel);
+        // }
 
 
 	});
