@@ -1,35 +1,126 @@
-.wedding-menu-left{
-    position: relative;
-    top: -19%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-img.wedding-menu-left-icon {
-    width: 150px;
-    height: auto;
-    position: absolute;
-    left: -150px;
-    top: -20px;
-    cursor: pointer;
+// .wedding-menu-left{
+//     position: relative;
+//     top: -19%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+// }
+// img.wedding-menu-left-icon {
+//     width: 150px;
+//     height: auto;
+//     position: absolute;
+//     left: -150px;
+//     top: -20px;
+//     cursor: pointer;
 
-}
+// }
 
 // section.wedding-menu-left-icon a img {
 //     width: 100%;
 //     height: auto;
 // }
 
-ul.main-menu-left {
+// ul.main-menu-left {
+//     width: 100%;
+//     margin: 0px;
+//     padding: 0px;
+//     position: relative;
+//     float: left;
+//     white-space: nowrap;
+//     overflow: hidden;
+// }
+
+// ul.main-menu-left li {
+//     display: inline-block;
+//     position: relative;
+//     background-image: url(../../img/tabs/brqx_tabs_no_selected_war_0100_2017.png);
+//     background-size: contain;
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     padding: 0px;
+// }
+
+// ul.main-menu-left li a {
+//     display: inline-block;
+//     color: #000;
+//     text-transform: uppercase;
+//     padding: 12px 12px;
+//     font-size: .75rem;
+//     text-decoration: none;
+// }
+
+// section.wedding-menu-left-wrapper {
+//     position: absolute;
+//     left: 0%;
+//     top: 0%;
+//     width: 100%;
+//     height: auto;
+// }
+
+// // CSS for slider(horizontal menu slider)
+
+// .wedding-menu-left-outer{
+//     position: relative;
+//     display: table-cell;
+//     width: 100%;
+// }
+// section.wedding-menu-left-inner {
+//     float: left;
+//     position: absolute;
+//     // left: -191px;
+// }
+// .wedding-menu-left-outer i {
+//     font-size: 25px;
+//     height: 40px;
+//     line-height: 40px;
+//     cursor: pointer;
+// }
+// .wedding-menu-left-wrapper > .wedding-menu-left-outer > i{
+//     // visibility: hidden;
+//     position: relative;
+// }
+// .wedding-menu-left-wrapper > .wedding-menu-left-outer:hover i{
+//     // visibility: visible;
+// }
+// .wedding-menu-left-outer i.left-arrow{
+//     margin-right: 10px;
+// }
+// .wedding-menu-left-outer i.right-arrow{
+//     margin-left: 10px;
+// }
+
+
+.wedding-menu-container{
+    position: absolute;
+    top: 0%;
+    left: 50%;
     width: 100%;
-    margin: 0px;
-    padding: 0px;
-    position: relative;
+    transform: translate(-50%, -50%);
+}
+img.left-arrow{
+    position: absolute;
+    top: 0;
+    left: 26%;
+    width: 135px;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+.menu-left{
+    width: 227px;
+}
+.wedding-menu-left{
+    position: absolute;
+    top: 50%;
+    left: 27%;
+    transform: translate(-50%, 50%);
+}
+.wedding-menu-left ul{
+    overflow: hidden;
     float: left;
     white-space: nowrap;
-    overflow: hidden;
+    margin: 0;
+    padding: 0;
 }
-
-ul.main-menu-left li {
+.wedding-menu-left ul li{
     display: inline-block;
     position: relative;
     background-image: url(../../img/tabs/brqx_tabs_no_selected_war_0100_2017.png);
@@ -38,54 +129,11 @@ ul.main-menu-left li {
     background-position: center;
     padding: 0px;
 }
-.wedding-menu-left-inner > ul > li.active{
-    margin-right: 100px;
-}
-ul.main-menu-left li a {
+.wedding-menu-left ul li a{
     display: inline-block;
     color: #000;
     text-transform: uppercase;
     padding: 12px 12px;
     font-size: .75rem;
     text-decoration: none;
-}
-
-section.wedding-menu-left-wrapper {
-    position: absolute;
-    left: 0%;
-    top: 0%;
-    width: 100%;
-    height: auto;
-}
-
-// CSS for slider(horizontal menu slider)
-
-.wedding-menu-left-outer{
-    position: relative;
-    // display: table-cell;
-    width: 100%;
-}
-section.wedding-menu-left-inner {
-    float: left;
-    // position: absolute;
-    // left: -191px;
-}
-.wedding-menu-left-outer i {
-    font-size: 25px;
-    height: 40px;
-    line-height: 40px;
-    cursor: pointer;
-}
-.wedding-menu-left-wrapper > .wedding-menu-left-outer > i{
-    // visibility: hidden;
-    position: relative;
-}
-.wedding-menu-left-wrapper > .wedding-menu-left-outer:hover i{
-    // visibility: visible;
-}
-.wedding-menu-left-outer i.left-arrow{
-    // margin-right: 10px;
-}
-.wedding-menu-left-outer i.right-arrow{
-    // margin-left: 10px;
 }
