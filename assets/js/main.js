@@ -110,7 +110,7 @@ function handleMouseMove(e) {
 
     // wedding left menu start
     // =========================
-    
+
     let scrollSpeed = 10;
 	function horizontal_Menu_Width(){
 		$('.wedding-menu-left-outer').each(function(){
@@ -129,7 +129,7 @@ function handleMouseMove(e) {
 		});
 	}
 	// initialization horizontal menu width function
-	horizontal_Menu_Width();
+	// horizontal_Menu_Width();
     // for left menu
     // -----------------
 	$('.wedding-menu-left-outer > i').on('mouseenter', function(){
@@ -232,6 +232,56 @@ function handleMouseMove(e) {
 	// 	let horizontalMenuParentID = $(this).parent('.wedding-menu-right-outer')[0].id;
 	// 	$("#"+horizontalMenuParentID+" >.wedding-menu-right-inner>.main-menu-right").stop();
 	// });
+
+    const speed = 3000;
+    function slideLeft() {
+        sliderContainer = ('.menu-left');
+        RsliderContainer = ('.menu-right');
+        remLength = $(sliderContainer)[0].scrollWidth - $(sliderContainer).width();
+        scrollable = remLength - $(sliderContainer).scrollLeft();
+        RremLength = $(RsliderContainer)[0].scrollWidth - $(RsliderContainer).width();
+        Rscrollable = RremLength - $(RsliderContainer).scrollLeft();
+        $(sliderContainer).animate({
+            scrollLeft: remLength
+        }, speed);
+        
+        $(RsliderContainer).animate({
+            scrollLeft: RremLength
+        }, speed);
+    }
+
+    function slideRight() {
+        sliderContainer = $('.menu-left');
+        RsliderContainer = $('.menu-right');
+        $(sliderContainer).animate({
+            scrollLeft: 0
+        }, speed);
+        $(RsliderContainer).animate({
+            scrollLeft: 0
+        }, speed);
+    }
+
+    $('.right-arrow').on('mouseover', slideLeft);
+    $('.left-arrow').on('mouseover', slideRight);
+
+    function stop(){
+        $('.menu-left').stop();
+      $('.menu-left').stop();
+    }
+
+    $('.right-arrow, .left-arrow').on('mouseout', stop);
+
+
+
+
+
+
+
+
+
+
+
+
 
     // wedding left menu END
     // =========================
