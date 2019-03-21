@@ -1008,6 +1008,9 @@ section.mobile-menu-wrapper i.mobile-right-arrow {
   section.ribone-border-3::after {
     content: url("../../img/ribbons/brqx_ribbon_double_0100_2018.png");
   }
+  .mobile-version-menu-container {
+    display: none;
+  }
   .main-slide-text-container {
     position: absolute;
     top: 40%;
