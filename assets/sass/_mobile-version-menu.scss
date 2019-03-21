@@ -1,0 +1,56 @@
+.mobile-version-menu-container{
+    margin-bottom: 15px;
+}
+.mobile-version-menu-container > .container > .row > .col-9{
+    display: block;
+}
+.mobile-menu-wrapper{
+    // width: inherit;
+    display: inline-flex;
+}
+section.mobile-menu-wrapper i {
+    line-height: 36px;
+    margin: 0px;
+    cursor: pointer;
+    font-size: 20px;
+}
+section.mobile-menu-wrapper i.mobile-left-arrow{
+    margin-right: 10px;
+}
+section.mobile-menu-wrapper i.mobile-right-arrow{
+    margin-left: 10px;
+}
+.mobile-menu-width{
+    width: 190px;
+}
+.mobile-menu ul{
+    overflow: hidden;
+    float: left;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+}
+.mobile-menu ul li{
+    display: inline-block;
+    position: relative;
+    background-image: url(../../img/tabs/brqx_tabs_no_selected_war_0100_2017.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0px;
+}
+.mobile-menu ul li a{
+    display: inline-block;
+    color: #000;
+    text-transform: uppercase;
+    padding: 12px 12px;
+    font-size: .75rem;
+    text-decoration: none;
+}
+
+.diamond-images {
+    padding-left: 10px;
+}
+.diamond-images img{
+    width: 100%;
+}

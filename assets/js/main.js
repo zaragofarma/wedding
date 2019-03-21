@@ -266,12 +266,46 @@ function handleMouseMove(e) {
 
     function stop(){
         $('.menu-left').stop();
-      $('.menu-left').stop();
+      $('.menu-right').stop();
     }
 
     $('.right-arrow, .left-arrow').on('mouseout', stop);
 
 
+    // for mobile devices menu function
+    // ------------------------------------------
+
+    function slideLeftForMobile() {
+        sliderContainer = ('.mobile-menu-width');
+        remLength = $(sliderContainer)[0].scrollWidth - $(sliderContainer).width();
+        scrollable = remLength - $(sliderContainer).scrollLeft();
+        $(sliderContainer).animate({
+            scrollLeft: remLength
+        }, speed);
+        
+        // $(RsliderContainer).animate({
+        //     scrollLeft: RremLength
+        // }, speed);
+    }
+
+    function slideRightForMobile() {
+        sliderContainer = $('.mobile-menu-width');
+        $(sliderContainer).animate({
+            scrollLeft: 0
+        }, speed);
+        // $(RsliderContainer).animate({
+        //     scrollLeft: 0
+        // }, speed);
+    }
+
+    $('.mobile-right-arrow').on('mouseover', slideLeftForMobile);
+    $('.mobile-left-arrow').on('mouseover', slideRightForMobile);
+
+    function stopForMobile(){
+        $('.mobile-menu-width').stop();
+    }
+
+    $('.mobile-right-arrow, .mobile-left-arrow').on('mouseout', stopForMobile);
 
 
 

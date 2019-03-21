@@ -32,6 +32,8 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   line-height: 1;
+  width: 100%;
+  height: 100vh;
 }
 
 ol, ul {
@@ -359,39 +361,23 @@ textarea {
   padding: 0.2em 0;
 }
 
-html,
-body {
-  height: 100%;
-  width: 100%;
-}
-
-.wedding-wrapper-bg {
-  background: url(../../img/backgrounds/brqx_wedding_desktop_1920_2018.png);
-  height: 100%;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
 section.wedding-header-wrapper {
   position: relative;
   z-index: 1;
+  padding-top: 10px;
 }
 
 .wedding-logo-left {
   display: inline-block;
-  width: 300px;
   float: left;
 }
 
 .wedding-logo-left a img {
-  width: 85%;
   height: auto;
 }
 
 .wedding-logo-right {
-  display: inline-block;
+  display: contents;
   width: 300px;
   float: right;
 }
@@ -410,16 +396,7 @@ section.wedding-header-wrapper {
 
 section.heart-bg {
   margin-right: auto;
-  position: relative;
-  width: 700px;
   margin-left: auto;
-}
-
-section.heart-bg > img {
-  width: 100%;
-  height: auto;
-  position: relative;
-  margin-top: 25px;
 }
 
 section.ribone-border-1,
@@ -433,20 +410,18 @@ section.ribone-border-1::before {
   content: "";
   width: 100%;
   height: 15px;
-  background-color: #DFA960;
   position: absolute;
   left: 0;
-  top: 0;
-  margin-top: 100px;
+  top: 25px;
+  margin-top: 0px;
 }
 
 section.ribone-border-2::before {
   content: "";
   width: 15px;
   height: 500px;
-  background-color: #DFA960;
   position: absolute;
-  top: 100px;
+  top: 25px;
   left: 0;
 }
 
@@ -454,9 +429,8 @@ section.ribone-border-4::before {
   content: "";
   width: 15px;
   height: 500px;
-  background-color: #DFA960;
   position: absolute;
-  top: 100px;
+  top: 25px;
   right: 0;
 }
 
@@ -464,29 +438,26 @@ section.ribone-border-3::before {
   content: "";
   width: 100%;
   height: 15px;
-  background-color: #DFA960;
   position: absolute;
   right: 0;
-  bottom: 15px;
+  bottom: 18px;
 }
 
 section.ribone-border-1::after {
-  content: url("../../img/ribbons/brqx_ribbon_double_0100_2018.png");
   width: 100px;
   height: 100px;
   position: absolute;
   top: 0;
   left: 0;
   border-radius: 50%;
-  margin-top: 50px;
+  margin-top: 0px;
   margin-left: -50px;
   z-index: 1;
 }
 
 section.ribone-border-3::after {
   position: absolute;
-  content: url("../../img/ribbons/brqx_ribbon_double_0100_2018.png");
-  bottom: 0;
+  bottom: 0px;
   right: 0;
   width: 100px;
   height: 100px;
@@ -495,15 +466,18 @@ section.ribone-border-3::after {
   margin-bottom: 0px;
 }
 
-.main-slide-text-container {
-  position: absolute;
-  top: 48%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+.mobile-ribone {
   width: 100%;
-  height: 400px;
-  padding: 77px;
+  height: 15px;
+  position: relative;
+  right: 0;
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  -webkit-box-shadow: 0px 0px 10px 0px #fff;
+          box-shadow: 0px 0px 10px 0px #fff;
+  top: 0px;
+  background-color: #DFA960;
 }
 
 .scroll-inner-container {
@@ -511,7 +485,6 @@ section.ribone-border-3::after {
 }
 
 .scroll-inner-container {
-  height: calc(245px + 0px);
   overflow: auto;
 }
 
@@ -542,10 +515,6 @@ section.ribone-border-3::after {
 section.social-media-icon-left {
   position: absolute;
   z-index: 1;
-  top: 50%;
-  left: 5px;
-  -webkit-transform: translate(70%, -69%);
-  transform: translate(100%, -66%);
 }
 
 section.social-media-icon-wrapper ul li a img {
@@ -557,9 +526,7 @@ section.social-media-icon-wrapper ul li {
 }
 
 section.social-media-icon-wrapper ul li a {
-  width: 32px;
   height: 100%;
-  display: block;
 }
 
 section.right-side-menu-wrapper {
@@ -699,18 +666,11 @@ img.right-arrow {
 
 .search-bar-area {
   position: absolute;
-  left: 50%;
-  bottom: 0;
-  -webkit-transform: translate(-50%, 0%);
-          transform: translate(-50%, 0%);
-  width: 300px;
-  height: 65px;
   z-index: 10;
 }
 
 .form-group.wedding-form {
   margin-bottom: 0rem;
-  background-image: url(../../img/hearts/brqx_search_heart_blue_0200_2018.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -727,13 +687,11 @@ input#wedding-search {
   transform: translate(-50%, -50%);
   background-color: #DDD7CA;
   border: 0px;
-  width: 150px;
   padding: 2px 20px 2px 5px;
 }
 
 .form-group.wedding-form span i {
   position: absolute;
-  right: 23%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -805,6 +763,306 @@ span.flag-combo-7 {
   transform: translate(-50%, 200%);
 }
 
+section.mobile-flag-combo {
+  float: right;
+  width: 100px;
+}
+
+section.mobile-flag-combo ul li {
+  position: relative;
+  display: block;
+}
+
+section.mobile-flag-combo ul li ul {
+  position: absolute;
+  left: 0;
+  height: 250px;
+  overflow-y: auto;
+  display: none;
+}
+
+section.mobile-flag-combo ul li:hover ul {
+  display: block;
+}
+
+section.mobile-flag-combo ul li a {
+  display: block;
+}
+
+.mobile-flag-combo ul li ul li {
+  margin: 5px 0px;
+}
+
+.mobile-flag-combo ul li a img,
+.mobile-flag-combo ul li ul li a img {
+  width: 100%;
+}
+
+.mobile-version-menu-container {
+  margin-bottom: 15px;
+}
+
+.mobile-version-menu-container > .container > .row > .col-9 {
+  display: block;
+}
+
+.mobile-menu-wrapper {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+section.mobile-menu-wrapper i {
+  line-height: 36px;
+  margin: 0px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+section.mobile-menu-wrapper i.mobile-left-arrow {
+  margin-right: 10px;
+}
+
+section.mobile-menu-wrapper i.mobile-right-arrow {
+  margin-left: 10px;
+}
+
+.mobile-menu-width {
+  width: 190px;
+}
+
+.mobile-menu ul {
+  overflow: hidden;
+  float: left;
+  white-space: nowrap;
+  margin: 0;
+  padding: 0;
+}
+
+.mobile-menu ul li {
+  display: inline-block;
+  position: relative;
+  background-image: url(../../img/tabs/brqx_tabs_no_selected_war_0100_2017.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0px;
+}
+
+.mobile-menu ul li a {
+  display: inline-block;
+  color: #000;
+  text-transform: uppercase;
+  padding: 12px 12px;
+  font-size: .75rem;
+  text-decoration: none;
+}
+
+.diamond-images {
+  padding-left: 10px;
+}
+
+.diamond-images img {
+  width: 100%;
+}
+
+@media (min-width: 320px) {
+  .wedding-wrapper-bg {
+    background-image: none;
+    height: 100%;
+    background: #f2d6df;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f2d6df), to(#fefdab));
+    background: linear-gradient(to bottom, #f2d6df 0%, #fefdab 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2d6df', endColorstr='#fefdab',GradientType=0 );
+  }
+  .wedding-logo-left {
+    width: 150px;
+  }
+  .wedding-logo-left a img {
+    width: 100%;
+  }
+  .wedding-logo-right a img {
+    display: none;
+  }
+  .heart-wrapper {
+    position: relative;
+    padding: 0px 0px;
+  }
+  section.heart-bg {
+    position: unset;
+    width: 300px;
+  }
+  section.heart-bg > img {
+    display: none;
+  }
+  section.ribone-border-1::before,
+  section.ribone-border-2::before,
+  section.ribone-border-3::before,
+  section.ribone-border-4::before {
+    background-color: transparent;
+  }
+  section.ribone-border-1::after {
+    content: "";
+  }
+  .main-slide-text-container {
+    padding: 0px;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+    height: 400px;
+  }
+  .wedding-menu-container {
+    display: none;
+  }
+  .social-media-icon-left {
+    bottom: 0%;
+    left: 0%;
+    -webkit-transform: translate(0%, -100%);
+    transform: translate(0%, -100%);
+  }
+  .social-media-icon-wrapper ul li {
+    display: inline;
+  }
+  .social-media-icon-wrapper ul li a {
+    display: inline-block;
+    width: 30px;
+  }
+  .search-bar-area {
+    width: 100px;
+    right: 0%;
+    bottom: 0;
+    -webkit-transform: translate(1%, 0%);
+            transform: translate(1%, 0%);
+  }
+  input#wedding-search {
+    width: 100px;
+  }
+  .form-group.wedding-form span i {
+    right: -4%;
+  }
+  .form-group.wedding-form {
+    background-image: none;
+  }
+  section.lang-select-flag-combo {
+    display: none;
+  }
+  .scroll-inner-container {
+    height: calc(335px + 0px);
+  }
+  .right-side-menu {
+    display: none;
+  }
+}
+
+@media (min-width: 540px) {
+  .wedding-wrapper-bg {
+    background: url(../../img/backgrounds/brqx_wedding_desktop_1920_2018.png);
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .wedding-logo-left {
+    width: 300px;
+  }
+  .wedding-logo-left a img {
+    width: 85%;
+  }
+  .wedding-logo-right a img {
+    display: inline-block;
+  }
+  section.mobile-flag-combo {
+    display: none;
+  }
+  .mobile-ribone-area {
+    display: none;
+  }
+  .heart-wrapper {
+    position: relative;
+    padding: 0px 80px;
+  }
+  section.heart-bg {
+    position: relative;
+    width: 700px;
+    margin-top: 25px;
+  }
+  section.heart-bg > img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: -13px;
+    display: block;
+  }
+  section.ribone-border-1::before,
+  section.ribone-border-2::before,
+  section.ribone-border-3::before,
+  section.ribone-border-4::before {
+    background-color: #DFA960;
+  }
+  section.ribone-border-1::after {
+    content: url("../../img/ribbons/brqx_ribbon_double_0100_2018.png");
+  }
+  section.ribone-border-3::after {
+    content: url("../../img/ribbons/brqx_ribbon_double_0100_2018.png");
+  }
+  .main-slide-text-container {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 100%;
+    height: 400px;
+    padding: 77px;
+  }
+  .scroll-inner-container {
+    height: calc(245px + 0px);
+  }
+  .wedding-menu-container {
+    display: block;
+  }
+  .social-media-icon-left {
+    top: 50%;
+    bottom: 4%;
+    left: 5px;
+    -webkit-transform: translate(70%, -69%);
+    transform: translate(100%, -66%);
+  }
+  .social-media-icon-wrapper ul li {
+    display: block;
+  }
+  .social-media-icon-wrapper ul li a {
+    display: block;
+    width: 32px;
+  }
+  .right-side-menu {
+    display: block;
+  }
+  .search-bar-area {
+    left: 50%;
+    bottom: 0;
+    -webkit-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
+    width: 300px;
+    height: 65px;
+  }
+  input#wedding-search {
+    width: 150px;
+  }
+  .form-group.wedding-form span i {
+    right: 23%;
+  }
+  .form-group.wedding-form {
+    background-image: url(../../img/hearts/brqx_search_heart_blue_0200_2018.png);
+  }
+  section.lang-select-flag-combo {
+    display: block;
+  }
+}
+
 .wedding-container {
   width: 100%;
   padding-right: 15px;
@@ -813,14 +1071,32 @@ span.flag-combo-7 {
   margin-left: auto;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 320px) {
+  .wedding-container {
+    max-width: 300px;
+    height: inherit;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+@media (min-width: 480px) {
+  .wedding-container {
+    max-width: 460px;
+    height: inherit;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+@media (min-width: 600px) {
   .wedding-container {
     max-width: 610px;
     height: inherit;
   }
 }
 
-@media (min-width: 750px) {
+@media (min-width: 768px) {
   .wedding-container {
     max-width: 720px;
     height: inherit;
@@ -834,7 +1110,7 @@ span.flag-combo-7 {
   }
 }
 
-@media (min-width: 1080px) {
+@media (min-width: 1024px) {
   .wedding-container {
     max-width: 1050px;
     height: inherit;

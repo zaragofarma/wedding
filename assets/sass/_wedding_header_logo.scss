@@ -2,21 +2,20 @@
 section.wedding-header-wrapper {
     position: relative;
     z-index: 1;
+    padding-top: 10px;
 }
 
 // wedding logo left
 .wedding-logo-left{
     display: inline-block;
-    width: 300px;
     float: left;
 }
 .wedding-logo-left a img{
-    width: 85%;
     height: auto;
 }
 // wedding logo right
 .wedding-logo-right{
-    display: inline-block;
+    display: contents;
     width: 300px;
     float: right;
 }

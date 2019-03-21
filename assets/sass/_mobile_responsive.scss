@@ -1,110 +1,302 @@
 
-@media (max-width: 319px) {
-.wedding-container {
-    max-width: 300px;
-    height: inherit;
-}
-.wedding-wrapper-bg{
-    background-color:red !important;
-}
-section.heart-bg{
-    width: 300px !important;
-}
-
-}
 @media (min-width: 320px){
+    .wedding-wrapper-bg{
+        background-image: none;
+        height:100%;
+        background: #f2d6df;
+        background: -moz-linear-gradient(top, #f2d6df 0%, #fefdab 100%);
+        background: -webkit-linear-gradient(top, #f2d6df 0%,#fefdab 100%);
+        background: linear-gradient(to bottom, #f2d6df 0%,#fefdab 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2d6df', endColorstr='#fefdab',GradientType=0 );
+    }
+    #wedding-wrapper {
+    }
+    
+    #heart {
+    }
+    
+    #wedding-search {
+    }
+    
     .wedding-container {
-        max-width: 300px;
-        height: inherit;
+    }
+    
+    .wedding-header-wrapper {
+    }
+    
+    .wedding-logo-left {
+        width: 150px;
+    }
+    .wedding-logo-left a img{
+        width: 100%;
+    }
+    .wedding-logo-right {
+    }
+    .wedding-logo-right a img{
+        display: none;
+    }
+    
+    .heart-wrapper {
+        position: relative;
+        padding: 0px 0px;
     }
     section.heart-bg{
-        width: 300px !important;
+        position: unset;
+        width: 300px;
     }
-    .wedding-wrapper-bg{
-        background-color:green !important;
+    section.heart-bg > img {
+        display: none;
     }
+    section.ribone-border-1::before,
+    section.ribone-border-2::before,
+    section.ribone-border-3::before,
+    section.ribone-border-4::before {
+        background-color: transparent;
+    }
+    section.ribone-border-1::after{
+        content: "";
+    }
+    
+    .main-slide-text-container {
+        padding: 0px;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        transform: translate(0%, 0%);
+        height: 400px;
+        
+    }
+    
+    .wedding-menu-container {
+        display: none;
+    }
+    
+    .left-arrow {
+    }
+    
+    .wedding-menu-left {
+    }
+    
+    .menu-left {
+    }
+    
+    .wedding-menu-right {
+    }
+    
+    .menu-right {
+    }
+    
+    .wedding-menu-right-icon.right-arrow {
+    }
+    
+    .social-media-icon-left {
+        bottom: 0%;
+        left: 0%;
+        -webkit-transform: translate(0%, -100%);
+        transform: translate(0%, -100%);
+    }
+    
+    .social-media-icon-wrapper {
+
+    }
+    .social-media-icon-wrapper ul{}
+    .social-media-icon-wrapper ul li{
+        display: inline;
+    }
+    .social-media-icon-wrapper ul li a{
+        display: inline-block;
+        width: 30px;
+    }
+    .social-media-icon-wrapper ul li a img{
+        
+    }
+    .search-bar-area {
+        width: 100px;
+        right: 0%;
+        bottom: 0;
+        transform: translate(1%, 0%);
+    }
+    input#wedding-search{
+        width: 100px;
+    }
+    .form-group.wedding-form span i{
+        right: -4%;
+    }
+    .search-bar-wrapper {
+    }
+    
+    .form-group.wedding-form{
+        background-image: none;
+    }
+    
+    .fas.fa-search {
+    }
+    
+    section.lang-select-flag-combo {
+        display: none;
+    }
+    
+    .lang-select-flag-combo-wrapper {
+    }
+    
+    .single-flag-images {
+    }
+    
+    .flag-combo-1 {
+    }
+    
+    .flag-combo-2 {
+    }
+    
+    .flag-combo-3 {
+    }
+    
+    .flag-combo-4 {
+    }
+    
+    .flag-combo-5 {
+    }
+    
+    .flag-combo-6 {
+    }
+    
+    .flag-combo-7 {
+    }
+    
+    .scroll-outer-container {
+    }
+    
+    .scroll-inner-container {
+        height: -moz-calc(335px + 0px);
+        height: -webkit-calc(335px + 0px);
+        height: calc(335px + 0px);
+    }
+    
+    .social-image-area {
+    }
+    
+    .right-side-menu {
+        display: none;
+    }
+    
+    .right-side-menu-wrapper {
+    }
+    
+
 }
+
+
 @media (max-width: 480px) {
-.wedding-container {
-    max-width: 460px;
-    height: inherit;
-}
-section.heart-bg{
-    width: 460px !important;
-}
 
 
 }
-
-
 
 @media (min-width: 540px) {
-.wedding-container {
-    max-width: 520px;
-    height: inherit;
+    .wedding-wrapper-bg{
+    background: url(../../img/backgrounds/brqx_wedding_desktop_1920_2018.png);
+    height:100%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    }
+    .wedding-logo-left {
+        width: 300px;
+    }
+    .wedding-logo-left a img{
+        width: 85%;
+    }
+    .wedding-logo-right a img{
+        display: inline-block;
+    }
+    section.mobile-flag-combo{
+        display: none;
+    }
+    .mobile-ribone-area{
+        display: none;
+    }
+    .heart-wrapper {
+        position: relative;
+        padding: 0px 80px;
+    }
+    section.heart-bg {
+        position: relative;
+        width: 700px;
+        margin-top: 25px;
+    }
+    section.heart-bg > img {
+        width: 100%;
+        height: auto;
+        position: relative;
+        margin-top: -13px;
+        display: block;
+    }
+    section.ribone-border-1::before,
+    section.ribone-border-2::before,
+    section.ribone-border-3::before,
+    section.ribone-border-4::before{
+        background-color: #DFA960;
+    }
+    section.ribone-border-1::after{
+        content: url('../../img/ribbons/brqx_ribbon_double_0100_2018.png');
+    }
+    section.ribone-border-3::after{
+        content: url('../../img/ribbons/brqx_ribbon_double_0100_2018.png');
+    }
+    .main-slide-text-container {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 400px;
+        padding: 77px;
+        
+    }
+    .scroll-inner-container {
+        height: -moz-calc(245px + 0px);
+        height: -webkit-calc(245px + 0px);
+        height: calc(245px + 0px);
+    }
+    .wedding-menu-container {
+        display: block;
+    }
+    .social-media-icon-left {
+        top: 50%;
+        bottom: 4%;
+        left: 5px;
+        -webkit-transform: translate(70%, -69%);
+        transform: translate(100%, -66%);
+    }
+    .social-media-icon-wrapper ul li{
+        display: block;
+    }
+    .social-media-icon-wrapper ul li a{
+        display: block;
+        width: 32px;
+    }
+    .right-side-menu {
+        display: block;
+    }
+    .search-bar-area {
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%, 0%);
+        width: 300px;
+        height: 65px;
+    }
+    input#wedding-search{
+        width: 150px;
+    }
+    .form-group.wedding-form span i{
+        right: 23%;
+    }
+    .form-group.wedding-form{
+        background-image: url(../../img/hearts/brqx_search_heart_blue_0200_2018.png);
+    }
+    section.lang-select-flag-combo {
+        display: block;
+    }
 }
 
-}
-
-
-
-
-// max device width
-
-@media (max-width: 540px) {
-.wedding-wrapper-bg{
-    background-color:#F1D4E1;
-    background-image: none;
-}
-.wedding-logo-right{
-    display: none;
-}
-.heart-wrapper{
-    padding: 0px 0px;
-}
-section.heart-bg{
-    max-width: 520px;
-}
-.heart-bg > img{
-    display: none;
-}
-section.lang-select-flag-combo{
-    display: none;
-}
-
-.main-slide-text-container {
-    position: absolute;
-    top: 0%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -29%);
-    transform: translate(-53%, 23%);
-    width: 100%;
-    height: 400px;
-    padding: 0px;
-}
-.wedding-menu-left{
-    display: none;
-}
-section.right-side-menu{
-    display: none;
-}
-section.social-media-icon-left{
-    display: none;
-}
-.form-group.wedding-form{
-    background-image: none;
-}
-.ribone-border-1,.ribone-border-2,.ribone-border-3,.ribone-border-4{
-    display: none;
-}
-
-
-
-
-
-
-
-
-
-}
     

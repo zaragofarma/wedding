@@ -1,11 +1,5 @@
 .main-slide-text-container {
-    position: absolute;
-    top: 48%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: 400px;
-    padding: 77px;
+
 }
 
 
@@ -13,9 +7,6 @@
     position: relative;
 }
 .scroll-inner-container{
-    height: -moz-calc(245px + 0px);
-    height: -webkit-calc(245px + 0px);
-    height: calc(245px + 0px);
     overflow: auto;
 }
 .social-image-area {

@@ -54,3 +54,41 @@ span.flag-combo-7{
     -webkit-transform: translate(-50%, 200%);
     transform: translate(-50%, 200%);
 }
+
+
+
+
+
+
+// flag-combo for mobile devices
+section.mobile-flag-combo {
+    float: right;
+    width: 100px;
+}
+
+section.mobile-flag-combo ul li {
+    position: relative;
+    display: block;
+}
+
+section.mobile-flag-combo ul li ul {
+    position: absolute;
+    left: 0;
+    height: 250px;
+    overflow-y: auto;
+    display: none;
+}
+section.mobile-flag-combo ul li:hover ul{
+    display: block;
+}
+section.mobile-flag-combo ul li a {
+    display: block;
+}
+
+.mobile-flag-combo ul li ul li{
+    margin: 5px 0px;
+}
+.mobile-flag-combo ul li a img,
+.mobile-flag-combo ul li ul li a img{
+    width: 100%;
+}
