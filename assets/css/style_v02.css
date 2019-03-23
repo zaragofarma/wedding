@@ -391,3 +391,161 @@ main conainer pages END
 */
 
 
+
+
+/*
+-----------------------------------------------
+bottom search bar area START
+-----------------------------------------------
+*/
+.search-bar-area{
+    position: absolute;
+    width: 40%;
+    top: 68%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.search-bar-wrapper{
+    background-image: url(../../img/hearts/brqx_search_heart_blue_0200_2018.png);
+    margin-bottom: 0;
+    position: relative;
+    height: 4rem;
+    background-position: center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100% !important;
+}
+.form-group.wedding-form{
+    margin-bottom: 0;
+    position: absolute;
+    top: 39%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* width: 75%; */
+
+}
+
+input#wedding-search {
+    position: relative;
+    /* top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
+    background-color: #DDD7CA;
+    border: 0px;
+    padding: 2px 20px 2px 5px;
+}
+.wedding-form span i.fa-search{
+    position: absolute;
+    top: 50%;
+    right: -3%;
+    transform: translate(-50%, -50%);
+}
+
+/*
+-----------------------------------------------
+bottom search bar area END 
+-----------------------------------------------
+*/
+
+
+
+/*
+--------------------------------------
+language select flag combo START
+---------------------------------------
+*/
+section.lang-select-flag-combo{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    top: 79%;
+    height: 30%;
+}
+.lang-select-flag-combo-wrapper{
+    width: 70%;
+    margin: 0 auto;
+}
+.single-flag-images{
+
+}
+.single-flag-images span{
+
+}
+.single-flag-images span a img{
+    /* width: 20%; */
+}
+.single-flag-images span.flag-combo-1 a img{
+    top: 9%;
+    position: absolute;
+    width: 10%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    
+}
+.single-flag-images span.flag-combo-2 a img{
+    top: 40%;
+    position: absolute;
+    width: 10%;
+    left: 26%;
+    transform: translate(-50%, -50%);
+    
+}
+.single-flag-images span.flag-combo-3 a img{
+    top: 68%;
+    position: absolute;
+    width: 10%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    
+}
+.single-flag-images span.flag-combo-4 a img{
+    top: 80%;
+    position: absolute;
+    width: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+.single-flag-images span.flag-combo-5 a img{
+    top: 68%;
+    position: absolute;
+    width: 10%;
+    right: 25%;
+    transform: translate(-50%, -50%);
+    
+}
+.single-flag-images span.flag-combo-6 a img{
+    top: 40%;
+    position: absolute;
+    width: 10%;
+    right: 16%;
+    transform: translate(-50%, -50%);
+    
+}
+.single-flag-images span.flag-combo-7 a img{
+    top: 9%;
+    position: absolute;
+    width: 10%;
+    right: 10%;
+    transform: translate(-50%, -50%);
+    
+}
+.single-flag-images span.flag-combo-8 a img{
+
+    
+}
+.single-flag-images span.flag-combo-9 a img{
+   
+    
+}
+.single-flag-images span.flag-combo-1{}
+.single-flag-images span.flag-combo-1{}
+.single-flag-images span.flag-combo-1{}
+.single-flag-images span.flag-combo-1{}
+/*
+-------------------------------------
+language select flag combo END 
+-------------------------------------
+/*
