@@ -320,6 +320,11 @@ function handleMouseMove(e) {
     // wedding left menu END
     // =========================
     // document ready function end
+
+
+
+
+
 });
 
 // raw JavaScript code here

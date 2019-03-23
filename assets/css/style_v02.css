@@ -1,0 +1,393 @@
+
+#wedding{
+    background-image: url(../../img/backgrounds/brqx_wedding_desktop_1920_2018.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+/* wedding headder area design */
+#header-area{
+    height: 15%;
+}
+/* MAIN LOGO LEFT-SIDE */
+.logo-left{
+    width: 50%;
+    float: left;
+    position: relative;
+    z-index: 2;
+    padding-left: 5%;
+}
+.logo-left img{
+    width: 50%;
+    height: auto;
+    margin-top: 2%;
+}
+/* RIGHT SIDE LOGO AND OTHER FUNCTIONALITY ACCORDING TO DEVICES  */
+.logo-right-and-other{
+    position: relative;
+    width: 50%;
+    float: right;
+    z-index: 2;
+}
+.desktop-logo{
+    margin: 0% 0% 0% 70%;
+}
+.desktop-logo img{
+    width: 70%;
+    height: auto;
+}
+.heart{
+    position: relative;
+    /* z-index: 1; */
+}
+.heart{
+    background-image: url(../../img/hearts/brqx_heart_pink_yellow_0800_2018.png);
+    width: 80%;
+    height: inherit;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+    margin: 0 auto;
+    position: relative;
+    max-height: 80%;
+}
+
+.rebone-top::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 15px;
+    background-color: #DFA960;
+    top: 3%;
+    left: 0;
+    z-index: -1;
+}
+
+.rebone-bottom::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 15px;
+    background-color: #DFA960;
+    bottom: 3%;
+    left: 0;
+    z-index: 1;
+}
+
+.rebone-left::before{
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 94%;
+    background-color: #DFA960;
+    top: 3%;
+    left: 0;
+    z-index: 1;
+}
+
+.rebone-right::before{
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 94%;
+    background-color: #DFA960;
+    top: 3%;
+    right: 0;
+    z-index: 1;
+}
+.rebone-top::after{
+    position: absolute;
+    content: url(../../img/ribbons/brqx_ribbon_double_0100_2018.png);
+    width: 100px;
+    height: 100px;
+    background-color:transparent;
+    top: 0%;
+    left: -50px;
+    z-index: 2;
+}
+.rebone-right::after{
+    position: absolute;
+    content: url(../../img/ribbons/brqx_ribbon_double_0100_2018.png);
+    width: 100px;
+    height: 100px;
+    background-color:transparent;
+    bottom: 0%;
+    right: -50px;
+    z-index: 1;
+}
+
+#wedding-heart-container{
+    position: relative;
+    height: inherit;
+    width: 60%;
+    margin: 0px auto;
+    z-index: 2;
+}
+
+
+/* wedding main-menu area
+---------------------------
+*/
+.wedding-menu-container{
+    display: inline-block;
+}
+.wedding-menu-container{}
+.wedding-menu-left-icon{
+    position: absolute;
+    top: 5%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    width: 25%;
+}
+.wedding-menu-right-icon{
+    position: absolute;
+    top: 5%;
+    right: 0%;
+    transform: translate(-55%, -50%);
+    width: 25%;
+}
+/* wedding left menu */
+.wedding-menu-left{
+    width: 36%;
+    display: inline-block;
+    position: absolute;
+    left: 27%;
+    transform: translate(-50%, -50%);
+    top: 12%;
+}
+.menu-left{
+    width: 100%;
+}
+.wedding-menu-left ul{
+    overflow: hidden;
+    float: left;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+}
+.wedding-menu-left ul li{
+    display: inline-block;
+    position: relative;
+    background-image: url(../../img/tabs/brqx_tabs_no_selected_war_0100_2017.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0px;
+}
+.wedding-menu-left ul li a{
+    display: inline-block;
+    color: #000;
+    text-transform: uppercase;
+    padding: 12px 12px;
+    font-size: .75rem;
+    text-decoration: none;
+}
+
+/* wedding right menu */
+.wedding-menu-right{
+    position: absolute;
+    right: 27%;
+    transform: translate(50%, -50%);
+    width: 36%;
+    top: 12%;
+}
+.menu-right{
+    width: 100%;
+}
+.wedding-menu-right ul{
+    overflow: hidden;
+    float: left;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+}
+.wedding-menu-right ul li{
+    display: inline-block;
+    position: relative;
+    background-image: url(../../img/tabs/brqx_tabs_no_selected_war_0100_2017.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0px;
+}
+.wedding-menu-right ul li a{
+    display: inline-block;
+    color: #000;
+    text-transform: uppercase;
+    padding: 12px 12px;
+    font-size: .75rem;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+/* 
+--------------------------------------------------------------------
+left social-icon area START 
+--------------------------------------------------------------------
+*/
+
+.social-media-icon-left {
+    position: absolute;
+    top: 33%;
+    left: 7%;
+    transform: translate(-50%, -50%);
+}
+
+.social-media-icon-wrapper {}
+.social-media-icon-wrapper ul{}
+.social-media-icon-wrapper ul li{
+    width: 70%;
+    padding: 3px;
+}
+.social-media-icon-wrapper ul li a{}
+.social-media-icon-wrapper ul li a img{
+    width: 100%;
+}
+
+
+
+
+
+/* 
+--------------------------------------------------------------------
+left social-icon area END 
+--------------------------------------------------------------------
+*/
+
+
+/*
+----------------------------------------
+main-container right side menu START
+----------------------------------------
+*/ 
+
+section.right-side-menu-wrapper {
+    transform: rotate(90deg);
+}
+section.right-side-menu {
+    position: absolute;
+    top: 36%;
+    right: 0%;
+    transform: translate(24%, -50%);
+}
+section.right-side-menu-wrapper ul li {
+    display: inline;
+    margin: -2px;
+}
+section.right-side-menu-wrapper ul li a {
+    display: inline-block;
+    padding: 2px 5px;
+    border: 1px solid #000;
+    background-color: #fff;
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: .9rem;
+}
+
+
+
+/*
+----------------------------------------
+main-container right side menu END
+----------------------------------------
+*/
+
+
+
+
+
+/* 
+--------------------------------------------------------------------
+main conainer pages START
+--------------------------------------------------------------------
+*/
+
+
+
+
+.main-slide-text-container {
+
+}
+
+.scroll-outer-container{
+    height: 43%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+.scroll-inner-container{
+
+}
+.scroll-inner-container{
+
+}
+.scroll-inner-container {
+    position: relative;
+    overflow: auto;
+    height: -moz-calc(95% + 0%);
+    height: -webkit-calc(95% + 0%);
+    height: calc(95% + 0%);
+    margin: 0 auto;
+    width: 83%;
+}
+.main-slide-text-container {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 400px;
+    padding: 77px;
+    
+}
+.social-image-area {
+    background-color: #eaeaea;
+    padding: 15px 15px 15px 15px;
+    text-align: justify;
+}
+.social-image-area p{
+
+}
+
+.social-image-area img{
+  padding-right: 15px;
+  padding-bottom: 5px;
+}
+
+/* // for chorme hide scroll-bar */
+.scroll-inner-container::-webkit-scrollbar{
+    display: none;
+    position: absolute;
+}
+
+.social-image-area p:nth-child(odd) {
+    color: #605E1A;
+}
+
+.social-image-area p:nth-child(even) {
+    color: #581A7D;
+}
+
+
+/* 
+-------------------------------------------
+main conainer pages END  
+-------------------------------------------
+*/
+
+
