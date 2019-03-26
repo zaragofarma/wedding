@@ -282,10 +282,6 @@ function handleMouseMove(e) {
         $(sliderContainer).animate({
             scrollLeft: remLength
         }, speed);
-        
-        // $(RsliderContainer).animate({
-        //     scrollLeft: RremLength
-        // }, speed);
     }
 
     function slideRightForMobile() {
@@ -293,9 +289,6 @@ function handleMouseMove(e) {
         $(sliderContainer).animate({
             scrollLeft: 0
         }, speed);
-        // $(RsliderContainer).animate({
-        //     scrollLeft: 0
-        // }, speed);
     }
 
     $('.mobile-right-arrow').on('mouseover', slideLeftForMobile);
@@ -317,8 +310,28 @@ function handleMouseMove(e) {
 
 
 
-    // wedding left menu END
-    // =========================
+    // for mobile devices menu function END
+    // =====================================
+
+    // main content right-menu "tab-content" functionality START here
+    // ----------------------------------------------------------------
+
+    $('ul.tab-menu li').click(function(e){
+        let tab_id = $(this).attr('data-tab');
+        $('ul.tab-menu li').removeClass('current');
+        $('.tab-content').removeClass('current');
+        $(this).addClass('current');
+        $("#"+tab_id).addClass('current').fadeIn();
+    });
+
+    // main content right-menu "tab-content" functionality END here
+    // ----------------------------------------------------------------
+
+
+
+
+
+
     // document ready function end
 
 

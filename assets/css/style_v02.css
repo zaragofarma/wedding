@@ -281,10 +281,15 @@ section.right-side-menu {
     top: 36%;
     right: 0%;
     transform: translate(24%, -50%);
+    z-index: 1;
 }
 section.right-side-menu-wrapper ul li {
     display: inline;
     margin: -2px;
+}
+section.right-side-menu-wrapper ul li.current a{
+    background-color: #825374;
+    color: #fff;
 }
 section.right-side-menu-wrapper ul li a {
     display: inline-block;
@@ -295,6 +300,8 @@ section.right-side-menu-wrapper ul li a {
     text-transform: uppercase;
     text-decoration: none;
     font-size: .9rem;
+    cursor: pointer;
+    outline: none;
 }
 
 
@@ -330,12 +337,7 @@ main conainer pages START
     transform: translate(-50%, -50%);
     width: 100%;
 }
-.scroll-inner-container{
 
-}
-.scroll-inner-container{
-
-}
 .scroll-inner-container {
     position: relative;
     overflow: auto;
@@ -383,6 +385,33 @@ main conainer pages START
     color: #581A7D;
 }
 
+.tab-content{
+    display: none;
+    -webkit-animation: fadeEffect 1s;
+    -moz-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+}
+.tab-content.current{
+    display: inherit;
+    
+}
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@-moz-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+
+
 
 /* 
 -------------------------------------------
@@ -404,6 +433,7 @@ bottom search bar area START
     top: 68%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 1;
 }
 .search-bar-wrapper{
     background-image: url(../../img/hearts/brqx_search_heart_blue_0200_2018.png);
