@@ -321,7 +321,7 @@ function handleMouseMove(e) {
         $('ul.tab-menu li').removeClass('current');
         $('.tab-content').removeClass('current');
         $(this).addClass('current');
-        $("#"+tab_id).addClass('current').fadeIn();
+        $("#"+tab_id).addClass('current');
     });
 
     // main content right-menu "tab-content" functionality END here

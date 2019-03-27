@@ -158,7 +158,7 @@
     position: absolute;
     left: 27%;
     transform: translate(-50%, -50%);
-    top: 12%;
+    top: 11%;
 }
 .menu-left{
     width: 100%;
@@ -170,7 +170,7 @@
     margin: 0;
     padding: 0;
 }
-.wedding-menu-left ul li{
+.wedding-menu-left > ul > li{
     display: inline-block;
     position: relative;
     background-image: url(../../img/tabs/brqx_tabs_no_selected_war_0100_2017.png);
@@ -179,6 +179,7 @@
     background-position: center;
     padding: 0px;
 }
+
 .wedding-menu-left ul li a{
     display: inline-block;
     color: #000;
@@ -187,6 +188,51 @@
     font-size: .75rem;
     text-decoration: none;
 }
+.wedding-menu-left ul li:hover{
+    background-image: url(../../img/tabs/brqx_tabs_selected_war_0100_2017.png);
+}
+/* wedding menu left sub-menu */
+.wedding-sub-menu-container{
+    display: inherit;
+}
+.wedding-left-sub-menu{
+    width: 36%;
+    position: absolute;
+    background-color: #FD6448;
+    top: 16%;
+    left: 27%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+.wedding-left-sub-menu span i{
+    cursor: pointer;
+    line-height: 28px;
+    height: 100%;
+}
+.wedding-left-sub-menu ul{}
+ul.left-sub-menu{
+    width: 100%;
+}
+.wedding-left-sub-menu ul.left-sub-menu{
+    overflow: hidden;
+    white-space: nowrap;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+}
+.wedding-left-sub-menu ul li{
+    display: inline;
+}
+.wedding-left-sub-menu ul li a{
+    display: inline-block;
+    color: #000;
+    text-transform: uppercase;
+    padding: 8px 12px;
+    font-size: .75rem;
+    text-decoration: none;
+
+
+}
 
 /* wedding right menu */
 .wedding-menu-right{
@@ -194,7 +240,7 @@
     right: 27%;
     transform: translate(50%, -50%);
     width: 36%;
-    top: 12%;
+    top: 11%;
 }
 .menu-right{
     width: 100%;
@@ -206,7 +252,7 @@
     margin: 0;
     padding: 0;
 }
-.wedding-menu-right ul li{
+.wedding-menu-right > ul > li{
     display: inline-block;
     position: relative;
     background-image: url(../../img/tabs/brqx_tabs_no_selected_war_0100_2017.png);
@@ -223,10 +269,48 @@
     font-size: .75rem;
     text-decoration: none;
 }
+.wedding-menu-right ul li:hover{
+    background-image: url(../../img/tabs/brqx_tabs_selected_war_0100_2017.png);
+}
 
 
-
-
+/* wedding menu right sub-menu */
+.right-sub-menu{
+    width: 100%;
+}
+.wedding-right-sub-menu{
+    width: 36%;
+    position: absolute;
+    background-color: #FD6448;
+    top: 16%;
+    right: 27%;
+    transform: translate(50%, -50%);
+    display: flex;
+}
+.wedding-right-sub-menu span i{
+    cursor: pointer;
+    line-height: 28px;
+    height: 100%;
+}
+.wedding-right-sub-menu ul{}
+.wedding-right-sub-menu ul.right-sub-menu{
+    overflow: hidden;
+    white-space: nowrap;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+}
+.wedding-right-sub-menu ul li{
+    display: inline;
+}
+.wedding-right-sub-menu ul li a{
+    display: inline-block;
+    color: #000;
+    text-transform: uppercase;
+    padding: 8px 12px;
+    font-size: .75rem;
+    text-decoration: none;
+}
 
 
 
@@ -332,7 +416,7 @@ main conainer pages START
 .scroll-outer-container{
     height: 43%;
     position: absolute;
-    top: 40%;
+    top: 41%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
