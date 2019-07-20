@@ -221,6 +221,9 @@
     display: flex;
 }
 
+
+/* .wedding-left-sub-menu */
+/* 
 .wedding-left-sub-menu{
     width: 36%;
     position: absolute;
@@ -258,7 +261,9 @@ ul.left-sub-menu{
     text-decoration: none;
 
 
-}
+} */
+
+
 
 /* wedding right menu */
 .wedding-menu-right{
@@ -301,7 +306,7 @@ ul.left-sub-menu{
 
 
 /* wedding menu right sub-menu */
-.right-sub-menu{
+/* .right-sub-menu{
     width: 100%;
 }
 .wedding-right-sub-menu{
@@ -336,7 +341,7 @@ ul.left-sub-menu{
     padding: 8px 12px;
     font-size: .75rem;
     text-decoration: none;
-}
+} */
 
 
 
